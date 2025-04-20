@@ -1,0 +1,363 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>PLATTNERA</title>
+    <meta name="description" content="Platt Nera International Limited. Industry Leader for IT Integrated Solutions and IT Support Services.">
+    <meta name="keywords" content="Platt Nera, plattnera, PlattNera, แพลทเนรา, แพลทเนร่า">
+    <meta name="author" content="Platt Nera International Limited">
+    <link href="assets/img/favicon2.png" rel="icon">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page" onload="checkCookie()">
+    <script>
+        function setCookie(cname, cvalue, exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+            let name = cname + "=";
+            let ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function checkCookie() {
+            let chklanguage = getCookie("language");
+            if (chklanguage != "") {
+                toggleLanguage(chklanguage);
+            } else {
+                if (chklanguage != "" && chklanguage != null) {
+                    setCookie("language", "English", 30);
+                }
+            }
+        }
+
+
+        function toggleLanguage(language) {
+
+            let Menuhome = document.getElementById("Menuhome");
+            let Menuabo = document.getElementById("Menuabo");
+            let Menucompany = document.getElementById("Menucompany");
+            let Menuexe = document.getElementById("Menuexe");
+            let Menuour = document.getElementById("Menuour");
+            let Menubank = document.getElementById("Menubank");
+            let Menusoft = document.getElementById("Menusoft");
+            let Menusys = document.getElementById("Menusys");
+            let Menusur = document.getElementById("Menusur");
+            let Menutel = document.getElementById("Menutel");
+            let Menudis = document.getElementById("Menudis");
+            let Menuiot = document.getElementById("Menuiot");
+            let Menuhel = document.getElementById("Menuhel");
+            let Menusuc = document.getElementById("Menusuc");
+            let Menunews = document.getElementById("Menunews");
+            let Menuinv = document.getElementById("Menuinv");
+            let Menucon = document.getElementById("Menucon");
+            let Menucar = document.getElementById("Menucar");
+
+            let headerhome = document.getElementById("headerhome");
+            let headernew = document.getElementById("headernew");
+
+            let Connew00 = document.getElementById("Connew00");
+            let Connew01 = document.getElementById("Connew01");
+            let Connew02 = document.getElementById("Connew02");
+
+            let foot1 = document.getElementById("foot1");
+            let foot2 = document.getElementById("foot2");
+            let foot3 = document.getElementById("foot3");
+            let foot4 = document.getElementById("foot4");
+            let foot5 = document.getElementById("foot5");
+            let foot6 = document.getElementById("foot6");
+            let foot7 = document.getElementById("foot7");
+            let foot8 = document.getElementById("foot8");
+
+
+            if (language === "English") {
+
+                Menuhome.innerHTML = "Home";
+                Menuabo.innerHTML = "About Us";
+                Menucompany.innerHTML = "Company Profile";
+                Menuexe.innerHTML = "Executive";
+                Menuour.innerHTML = "Our Solutions";
+                Menubank.innerHTML = "Banking Solutions";
+                Menusoft.innerHTML = "Software Development";
+                Menusys.innerHTML = "System Network Infrastructure";
+                Menusur.innerHTML = "Surveillancs Security";
+                Menutel.innerHTML = "Telecommunication";
+                Menudis.innerHTML = "Disaster Management";
+                Menuiot.innerHTML = "Internet Of Things (IOT)";
+                Menuhel.innerHTML = "Helpdesk & Monitering";
+                Menusuc.innerHTML = "Success Story";
+
+                Menunews.innerHTML = "News";
+                Menuinv.innerHTML = "Investor Relation";
+                Menucon.innerHTML = "Contact Us";
+                Menucar.innerHTML = "Career";
+
+                headerhome.innerHTML = "HOME";
+                headernew.innerHTML = "NEWS";
+
+                Connew00.innerHTML = "Provide satellite receiving station and system and present for high technology satellite communication for GISTDA";
+                Connew01.innerHTML = "Provide satellite receiving station and system and present for high technology satellite communication for GISTDA";
+                Connew02.innerHTML = "Plattnera company is leading complete service company that provide internet technology and complete solution for telecommunication. We shared cooperation about high technology satellite communication includes high speed digital transfer, very secure and high efficiency in every coverage area with Viasat Company from United State. We also provide satellite receiving station and system and present for high technology satellite communication for GISTDA and their government sectors at Geo-Informatics and Space Technology Development Agency headquarters (The Government Complex Commemorating His Majesty The King's 80 th Birthday Anniversary) Monday 2 February 2015 ago.";
+
+                foot1.innerHTML = "170/9-10 4th Floor Ocean Tower 1";
+                foot2.innerHTML = "Sukhumvit Soi 16, Ratchadapisek Rd., Klongtoey, Bangkok 10110";
+                foot3.innerHTML = "Phone";
+                foot4.innerHTML = "+66-2661-9922 to 8";
+                foot5.innerHTML = "Fax: <span>+66-2661-9933</span>";
+                foot6.innerHTML = "Email";
+                foot7.innerHTML = "Sales / Operations :";
+                foot8.innerHTML = "Investor Relations:";
+
+                /* ห้ามเอาออก เอาไว้สำหรับเก็บค่า */
+                setCookie("language", "English", 30);
+
+            }
+            else {
+
+                Menuhome.innerHTML = "หน้าหลัก";
+                Menuabo.innerHTML = "เกี่ยวกับเรา";
+                Menucompany.innerHTML = "ประวัติบริษัท";
+                Menuexe.innerHTML = "คณะผู้บริหาร";
+                Menuour.innerHTML = "โซลูชั่นของเรา";
+                Menubank.innerHTML = "โซลูชั่นทางการเงิน";
+                Menusoft.innerHTML = "โซลูชั่นทางการพัฒนาระบบ";
+                Menusys.innerHTML = "โซลูชั่นทางระบบเครือข่าย";
+                Menusur.innerHTML = "โซลูชั่นทางด้านความปลอดภัย";
+                Menutel.innerHTML = "โซลูชั่นทางโทรคมนาคม";
+                Menudis.innerHTML = "โซลูชั่นทางระบบเตือนภัยทางภัยพิบัติ";
+                Menuiot.innerHTML = "โซลูชั่นทาง IOT";
+                Menuhel.innerHTML = "โซลูชั่นด้านการช่วยเหลือ";
+                Menusuc.innerHTML = "ผลงานของเรา";
+                Menunews.innerHTML = "ข่าวสารองค์กร";
+                Menuinv.innerHTML = "นักลงทุนสัมพันธ์";
+                Menucon.innerHTML = "ติดต่อเรา";
+                Menucar.innerHTML = "ร่วมงานกับเรา";
+
+                headerhome.innerHTML = "หน้าหลัก";
+                headernew.innerHTML = "ข่าวสารองค์กร";
+
+                /* PEA Unmanned Substation - Maintenance Training */
+                Connew00.innerHTML = "ให้ความรู้เกี่ยวกับระบบรับสัญญาณดาวเทียมที่ทันสมัยล่าสุด ให้กับทางสำนักงานพัฒนาเทคโนโลยี";
+                Connew01.innerHTML = "ให้ความรู้เกี่ยวกับระบบรับสัญญาณดาวเทียมที่ทันสมัยล่าสุด ให้กับทางสำนักงานพัฒนาเทคโนโลยี";
+                Connew02.innerHTML = "บริษัท แพลท เนรา จำกัด ผู้นำการให้บริการด้านเทคโนโลยีสารสนเทศ และด้านสื่อสารโทรคมนาคมครบวงจร ได้ให้ความร่วมมือกับทางบริษัท ViaSatประเทศสหรัฐอเมริกา ผู้ให้ผลิตและบริการเกี่ยวกับด้านดาวเทียมที่ทันสมัย รวมไปถึงการสื่อสารแบบดิจิทัลที่มีความเร็วสูง ปลอดภัย และมีประสิทธิในการสื่อสารได้ทุกพื้นที่โดยบริษัทแพลท เนรา จำกัด ได้เป็นผู้ติดตั้งระบบรับสัญญาณดาวเทียม ให้กับสำนักงานพัฒนาเทคโนโลยีอวกาศและภูมิสารสนเทศ หรือ GISTDAซึ่งบริษัทฯ ได้นำเสนอให้ความรู้เกี่ยวกับระบบรับสัญญาณดาวเทียมที่ทันสมัยล่าสุด ให้กับทางสำนักงานพัฒนาเทคโนโลยีอวกาศและภูมิสารสนเทศ และผู้เชี่ยวชาญจากหน่วยงานที่เกี่ยวข้อง ณ สำนักงานพัฒนาเทคโนโลยีอวกาศและภูมิสารสนเทศ สำนักงานใหญ่ (ศูนย์ราชการเฉลิมพระเกียรติ 80 พรรษา 5 ธันวาคม 2550) เมื่อวันจันทร์ที่ 2 กุมภาพันธ์ 2558 ที่ผ่านมา";
+
+                foot1.innerHTML = "170/9-10 ชั้น 4 อาคารโอเชี่ยน ทาวเวอร์ 1";
+                foot2.innerHTML = "ซอยสุขุมวิท 16 ถนนรัชดาภิเษก คลองเตย กรุงเทพฯ 10110";
+                foot3.innerHTML = "โทรศัพท์";
+                foot4.innerHTML = "+66-2661-9922 ต่อ 8";
+                foot5.innerHTML = "แฟกซ์ <span>+66-2661-9933</span";
+                foot6.innerHTML = "อีเมล";
+                foot7.innerHTML = "ฝ่ายขาย /ฝ่ายปฏิบัติการ";
+                foot8.innerHTML = "นักลงทุนสัมพันธ์";
+
+                /* ห้ามเอาออก เอาไว้สำหรับเก็บค่า */
+                setCookie("language", "Thai", 30);
+
+            }
+        }
+
+    </script>
+
+    <header id="header" class="header sticky-top">
+
+        <div class="topbar d-flex align-items-center dark-background">
+            <div class="container d-flex justify-content-between">
+                <div class="contact-info d-flex align-items-center">
+                </div>
+                <div class="language-switcher d-flex align-items-center">
+                    <a href="#" onclick="toggleLanguage('English')" id="change_eng">
+                        <img src="assets/img/EN.webp" alt="EN" style="width:25px; height:15px;">
+                    </a>
+                    <a href="#" onclick="toggleLanguage('Thai')" id="change_th">
+                        <img src="assets/img/TH.webp" alt="TH" style="width:25px; height:15px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="branding">
+            <div class="container position-relative d-flex align-items-center justify-content-between">
+                <a href="index.html" class="logo d-flex align-items-center">
+                    <h1 class="sitename">PLATTNERA<br></h1>
+                </a>
+
+                <nav id="navmenu" class="navmenu">
+                    <ul>
+                        <li><a href="Home.html" id="Menuhome">HOME</a></li>
+                        <li class="dropdown">
+                            <a href="#"><span id="Menuabo">ABOUT US</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                            <ul>
+                                <li><a href="Company_Profile.html" id="Menucompany">COMPANY PROFILE</a></li>
+                                <li><a href="Executive.html" id="Menuexe">EXECUTIVE</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#"><span id="Menuour">OUR SOLUTION</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                            <ul>
+                                <li><a href="Banking_Industry_Solutions.html" id="Menubank">BANKING SOLUTIONS</a></li>
+                                <li><a href="Software_Development.html" id="Menusoft">SOFTWARE DEVELOPMENT</a></li>
+                                <li><a href="System_&_Network_Infrastructure.html" id="Menusys">SYSTEM & NETWORK INFRASTRUCTURE</a></li>
+                                <li><a href="Surveillance_Security.html" id="Menusur">SURVEILLANCE SECURITY</a></li>
+                                <li><a href="Telecommunication.html" id="Menutel">TELECOMMUNICATION</a></li>
+                                <li><a href="Disater.html" id="Menudis">Disaster Management</a></li>
+                                <li><a href="Internet_Of_Things.html" id="Menuiot">INTERNET OF (IoT)</a></li>
+                                <li><a href="Helpdesk_&_Monitering.html" id="Menuhel">HELPDESK & MONITERING</a></li>
+                            </ul>
+                        <li><a href="Success_Project.html" id="Menusuc">SUCCESS STORY</a></li>
+                        <li><a href="News.html" class="active" id="Menunews">NEWS</a></li>
+                        <li><a href="https://www.irasia.com/listco/hk/plattnera/index.htm" id="Menuinv" target="_blank">INVESTOR RELATION</a></li>
+                        <li><a href="Contact_Us.html" id="Menucon">CONTACT US</a></li>
+                        <li><a href="Career.html" id="Menucar">CAREER</a></li>
+                    </ul>
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <div class="page-title" data-aos="fade">
+            <div class="container">
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="index.html" id="headerhome">Home</a></li>
+                        <li class="current" id="headernew">News</li>
+                    </ol>
+                </nav>
+                <h1 id="Connew00">PEA Unmanned Substation - Maintenance Training</h1>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="col-lg-8">
+
+                    <section id="blog-details" class="blog-details section">
+                        <div class="container">
+
+                            <article class="article">
+
+                                <div class="post-img">
+                                    <center>
+                                        <img src="assets/img/NEW/N17.webp" alt="" class="img-fluid">
+                                    </center>
+                                </div>
+
+                                <h2 class="title" id="Connew01">PEA Unmanned Substation - Maintenance Training</h2>
+                                <div class="meta-top">
+                                    <ul>
+                                        <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="#">Admin</a></li>
+                                        <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-details.html"><time datetime="2020-01-01">Feb 2, 2015</time></a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="content">
+                                    <p id="Connew02">
+                                        The Provincial Electricity Authority (PEA), through its Operation and Power Grid Technology Division, conducted specialized training on maintaining the Unmanned Substation System. This program was attended by officials from all 12 Provincial Electricity Areas
+                                    </p>
+                                    <button type="button" class="btn" style="background-color: darkorange; border-color: darkorange; color: black; display: inline-block; float: left; " onclick="window.history.back()">
+                                        <i class="bi bi-reply"></i>
+                                    </button>
+
+                                    <a href="Home.html" style="text-decoration: none;">
+                                        <button type="button" class="btn" style="background-color: darkorange; border-color: darkorange; color: black; display: inline-block; float: right; "><i class="bi bi-house-door"></i></button>
+                                    </a>
+                                </div>
+                                <br />
+                            </article>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer" class="footer position-relative dark-background">
+        <div class="footer">
+            <div class="container footer-top">
+                <div class="row gy-4">
+                    <div class="col-lg-2 col-md-2 footer-about">
+                        <center>
+                            <img src="assets/img/Logo-PN.webp" height="100">
+                        </center>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 footer-about">
+                        <!-- Empty section -->
+                        <div class="footer-contact pt-6">
+                            <p id="foot1">170/9-10 4th Floor Ocean Tower 1</p>
+                            <p id="foot2">Sukhumvit Soi 16, Ratchadapisek Rd., Klongtoey, Bangkok 10110</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 footer-about">
+                        <div class="footer-contact pt-6">
+                            <p><strong id="foot3">Phone:</strong> <span id="foot4">+66-2661-9922 to 8</span></p>
+                            <p id="foot5">Fax: <span>+66-2661-9933</span></p>
+                            <p><strong id="foot6">Email</strong></p>
+                            <p><strong id="foot7">Sales / Operations :</strong> <span>enquiries@plattnera.com</span></p>
+                            <p><strong id="foot8">Investor Relations:</strong> <span>ir@plattnera.com</span></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-2 footer-about">
+                        <img src="assets/img/1213.webp" height="130" class="img_radius">
+                    </div>
+                </div>
+            </div>
+            <div class="container copyright text-center mt-4">
+                <p>© <span>2024 Platt Nera International Limited</span></p>
+            </div>
+        </div>
+
+    </footer>
+
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

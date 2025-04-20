@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>PLATTNERA</title>
+    <meta name="description" content="Platt Nera International Limited. Industry Leader for IT Integrated Solutions and IT Support Services.">
+    <meta name="keywords" content="Platt Nera, plattnera, PlattNera, แพลทเนรา, แพลทเนร่า">
+    <meta name="author" content="Platt Nera International Limited">
+    <link href="assets/img/favicon2.png" rel="icon">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles10.css">
+    <link rel="stylesheet" href="assets/css/job-card-style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page" onload="checkCookie()">
+    <script>
+        function setCookie(cname, cvalue, exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+            let name = cname + "=";
+            let ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function checkCookie() {
+            let chklanguage = getCookie("language");
+            if (chklanguage != "") {
+                toggleLanguage(chklanguage);
+            } else {
+                if (chklanguage != "" && chklanguage != null) {
+                    setCookie("language", "English", 30);
+                }
+            }
+        }
+
+
+        function toggleLanguage(language) {
+
+            let Menuhome = document.getElementById("Menuhome");
+            let Menuabo = document.getElementById("Menuabo");
+            let Menucompany = document.getElementById("Menucompany");
+            let Menuexe = document.getElementById("Menuexe");
+            let Menuour = document.getElementById("Menuour");
+            let Menubank = document.getElementById("Menubank");
+            let Menusoft = document.getElementById("Menusoft");
+            let Menusys = document.getElementById("Menusys");
+            let Menusur = document.getElementById("Menusur");
+            let Menutel = document.getElementById("Menutel");
+            let Menudis = document.getElementById("Menudis");
+            let Menuiot = document.getElementById("Menuiot");
+            let Menuhel = document.getElementById("Menuhel");
+            let Menusuc = document.getElementById("Menusuc");
+
+            let Menunews = document.getElementById("Menunews");
+            let Menuinv = document.getElementById("Menuinv");
+            let Menucon = document.getElementById("Menucon");
+            let Menucar = document.getElementById("Menucar");
+
+            let headerhome = document.getElementById("headerhome");
+            let headernew = document.getElementById("headernew");
+
+            let Ban1 = document.getElementById("Ban1");
+            let Ban2 = document.getElementById("Ban2");
+            let Ban3 = document.getElementById("Ban3");
+
+            let Connew00 = document.getElementById("Connew00");
+            let Connew01 = document.getElementById("Connew01");
+
+            let Connew02 = document.getElementById("Connew02");
+            let Connew03 = document.getElementById("Connew03");
+
+            let Connew04 = document.getElementById("Connew04");
+            let Connew05 = document.getElementById("Connew05");
+
+            let Connew06 = document.getElementById("Connew06");
+            let Connew07 = document.getElementById("Connew07");
+
+            let Connew10 = document.getElementById("Connew10");
+            let Connew11 = document.getElementById("Connew11");
+            let Connew12 = document.getElementById("Connew12");
+            let Connew13 = document.getElementById("Connew13");
+            let Connew14 = document.getElementById("Connew14");
+            let Connew15 = document.getElementById("Connew15");
+            let Connew16 = document.getElementById("Connew16");
+            let Connew17 = document.getElementById("Connew17");
+
+            let Read1 = document.getElementById("Read1");
+
+            let foot1 = document.getElementById("foot1");
+            let foot2 = document.getElementById("foot2");
+            let foot3 = document.getElementById("foot3");
+            let foot4 = document.getElementById("foot4");
+            let foot5 = document.getElementById("foot5");
+            let foot6 = document.getElementById("foot6");
+            let foot7 = document.getElementById("foot7");
+            let foot8 = document.getElementById("foot8");
+
+            if (language === "English") {
+
+                Menuhome.innerHTML = "Home";
+                Menuabo.innerHTML = "About Us";
+                Menucompany.innerHTML = "Company Profile";
+                Menuexe.innerHTML = "Executive";
+                Menuour.innerHTML = "Our Solutions";
+                Menubank.innerHTML = "Banking Solutions";
+                Menusoft.innerHTML = "Software Development";
+                Menusys.innerHTML = "System Network Infrastructure";
+                Menusur.innerHTML = "Surveillancs Security";
+                Menutel.innerHTML = "Telecommunication";
+                Menudis.innerHTML = "Disaster Management";
+                Menuiot.innerHTML = "Internet Of Things (IOT)";
+                Menuhel.innerHTML = "Helpdesk & Monitering";
+                Menusuc.innerHTML = "Success Story";
+                Menunews.innerHTML = "News";
+                Menuinv.innerHTML = "Investor Relation";
+                Menucon.innerHTML = "Contact Us";
+                Menucar.innerHTML = "Career";
+
+                headerhome.innerHTML = "Home";
+                headernew.innerHTML = "Career";
+
+                Ban1.innerHTML = "PLATTNERA";
+                Ban2.innerHTML = "Private Sector / Government";
+                Ban3.innerHTML = "Asoke, Bangkok";
+
+                Connew00.innerHTML = "Sales Engineer";
+                Connew01.innerHTML = "PLATTNERA";
+
+                Connew02.innerHTML = "Ocean Tower 1, Bangkok ";
+                Connew03.innerHTML = "Negotiable";
+
+                Connew04.innerHTML = "Job Application";
+
+                Connew05.innerHTML = "Male/Female &nbsp; Age: 25 – 35 years";
+                Connew06.innerHTML = "Bachelor’s degree or higher in Engineering, Information Technology, Computer Science, Telecommunications, or related fields.";
+                Connew07.innerHTML = "Experience in selling projects to government organizations.";
+
+                Connew10.innerHTML = "Pre-Sales Engineer";
+                Connew11.innerHTML = "PLATTNERA";
+                Connew12.innerHTML = "Ocean Tower 1, Bangkok ";
+                Connew13.innerHTML = "Negotiable";
+                Connew14.innerHTML = "Job Application";
+                Connew15.innerHTML = "Male/Female &nbsp; Age: 25 – 35 years";
+                Connew16.innerHTML = "Bachelor’s degree or higher in Engineering, Information Technology, Computer Science, Telecommunications, or related fields.";
+                Connew17.innerHTML = "Experience in selling projects to government organizations.";
+
+                foot1.innerHTML = "170/9-10 4th Floor Ocean Tower 1";
+                foot2.innerHTML = "Sukhumvit Soi 16, Ratchadapisek Rd., Klongtoey, Bangkok 10110";
+                foot3.innerHTML = "Phone";
+                foot4.innerHTML = "+66-2661-9922 to 8";
+                foot5.innerHTML = "Fax: <span>+66-2661-9933</span>";
+                foot6.innerHTML = "Email";
+                foot7.innerHTML = "Sales / Operations :";
+                foot8.innerHTML = "Investor Relations:";
+
+                /* ห้ามเอาออก เอาไว้สำหรับเก็บค่า */
+                setCookie("language", "English", 30);
+
+            }
+            else {
+
+                Menuhome.innerHTML = "หน้าหลัก";
+                Menuabo.innerHTML = "เกี่ยวกับเรา";
+                Menucompany.innerHTML = "ประวัติบริษัท";
+                Menuexe.innerHTML = "คณะผู้บริหาร";
+                Menuour.innerHTML = "โซลูชั่นของเรา";
+                Menubank.innerHTML = "โซลูชั่นทางการเงิน";
+                Menusoft.innerHTML = "โซลูชั่นทางการพัฒนาระบบ";
+                Menusys.innerHTML = "โซลูชั่นทางระบบเครือข่าย";
+                Menusur.innerHTML = "โซลูชั่นทางด้านความปลอดภัย";
+                Menutel.innerHTML = "โซลูชั่นทางโทรคมนาคม";
+                Menudis.innerHTML = "โซลูชั่นทางระบบเตือนภัยทางภัยพิบัติ";
+                Menuiot.innerHTML = "โซลูชั่นทาง IOT";
+                Menuhel.innerHTML = "โซลูชั่นด้านการช่วยเหลือ";
+                Menusuc.innerHTML = "ผลงานของเรา";
+
+                Menunews.innerHTML = "ข่าวสารองค์กร";
+                Menuinv.innerHTML = "นักลงทุนสัมพันธ์";
+                Menucon.innerHTML = "ติดต่อเรา";
+                Menucar.innerHTML = "ร่วมงานกับเรา";
+
+                headerhome.innerHTML = "หน้าหลัก";
+                headernew.innerHTML = "ร่วมงานกับเรา";
+
+                Ban1.innerHTML = "แพลทเนรา";
+                Ban2.innerHTML = "ภาคเอกชน / รัฐบาล";
+                Ban3.innerHTML = "อโศก, กรุงเทพฯ";
+
+                Connew00.innerHTML = "วิศวกรฝ่ายขาย";
+                Connew01.innerHTML = "แพลทเนรา";
+
+                Connew02.innerHTML = "อาคารโอเชี่ยนทาวเวอร์ 1, กรุงเทพฯ ";
+                Connew03.innerHTML = "ตามตกลง";
+
+                Connew04.innerHTML = "สมัครงาน";
+
+                Connew05.innerHTML = "เพศ ชาย/หญิง  อายุ 25 – 35 ปี";
+                Connew06.innerHTML = "วุฒิปริญญาตรีหรือสูงกว่า สาขาวิศวกรรมศาสตร์ เทคโนโลยีสารสนเทศ คอมพิวเตอร์ โทรคมนาคม หรือสาขาอื่นที่เกี่ยวข้อง";
+                Connew07.innerHTML = "มีประสบการณ์ขายงานโครงการให้กับองค์กรของรัฐ";
+
+                Connew10.innerHTML = "วิศวกรพรีเซลส์";
+                Connew11.innerHTML = "แพลทเนรา";
+                Connew12.innerHTML = "อาคารโอเชี่ยนทาวเวอร์ 1, กรุงเทพฯ ";
+                Connew13.innerHTML = "ตามตกลง";
+                Connew14.innerHTML = "สมัครงาน";
+                Connew15.innerHTML = "เพศ ชาย/หญิง  อายุ 25 – 35 ปี";
+                Connew16.innerHTML = "วุฒิปริญญาตรีหรือสูงกว่า สาขาวิศวกรรมศาสตร์ เทคโนโลยีสารสนเทศ คอมพิวเตอร์ โทรคมนาคม หรือสาขาอื่นที่เกี่ยวข้อง";
+                Connew17.innerHTML = "มีประสบการณ์ขายงานโครงการให้กับองค์กรของรัฐ";
+
+                foot1.innerHTML = "170/9-10 ชั้น 4 อาคารโอเชี่ยน ทาวเวอร์ 1";
+                foot2.innerHTML = "ซอยสุขุมวิท 16 ถนนรัชดาภิเษก คลองเตย กรุงเทพฯ 10110";
+                foot3.innerHTML = "โทรศัพท์";
+                foot4.innerHTML = "+66-2661-9922 ต่อ 8";
+                foot5.innerHTML = "แฟกซ์ <span>+66-2661-9933</span";
+                foot6.innerHTML = "อีเมล";
+                foot7.innerHTML = "ฝ่ายขาย /ฝ่ายปฏิบัติการ";
+                foot8.innerHTML = "นักลงทุนสัมพันธ์";
+
+                /* ห้ามเอาออก เอาไว้สำหรับเก็บค่า */
+                setCookie("language", "Thai", 30);
+
+            }
+        }
+
+    </script>
+
+    <header id="header" class="header sticky-top">
+
+        <div class="topbar d-flex align-items-center dark-background">
+            <div class="container d-flex justify-content-between">
+                <div class="contact-info d-flex align-items-center">
+                </div>
+                <div class="language-switcher d-flex align-items-center">
+                    <a href="#" onclick="toggleLanguage('English')" id="change_eng">
+                        <img src="assets/img/EN.webp" alt="EN" style="width:25px; height:15px;">
+                    </a>
+                    <a href="#" onclick="toggleLanguage('Thai')" id="change_th">
+                        <img src="assets/img/TH.webp" alt="TH" style="width:25px; height:15px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="branding">
+            <div class="container position-relative d-flex align-items-center justify-content-between">
+                <a href="index.html" class="logo d-flex align-items-center">
+                    <h1 class="sitename">PLATTNERA<br></h1>
+                </a>
+
+                <nav id="navmenu" class="navmenu">
+                    <ul>
+                        <li><a href="Home.html" id="Menuhome">HOME</a></li>
+                        <li class="dropdown">
+                            <a href="#"><span id="Menuabo">ABOUT US</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                            <ul>
+                                <li><a href="Company_Profile.html" id="Menucompany">COMPANY PROFILE</a></li>
+                                <li><a href="Executive.html" id="Menuexe">EXECUTIVE</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#"><span id="Menuour">OUR SOLUTION</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                            <ul>
+                                <li><a href="Banking_Industry_Solutions.html" id="Menubank">BANKING SOLUTIONS</a></li>
+                                <li><a href="Software_Development.html" id="Menusoft">SOFTWARE DEVELOPMENT</a></li>
+                                <li><a href="System_&_Network_Infrastructure.html" id="Menusys">SYSTEM & NETWORK INFRASTRUCTURE</a></li>
+                                <li><a href="Surveillance_Security.html" id="Menusur">SURVEILLANCE SECURITY</a></li>
+                                <li><a href="Telecommunication.html" id="Menutel">TELECOMMUNICATION</a></li>
+                                <li><a href="Disater.html" id="Menudis">Disaster Management</a></li>
+                                <li><a href="Internet_Of_Things.html" id="Menuiot">INTERNET OF (IoT)</a></li>
+                                <li><a href="Helpdesk_&_Monitering.html" id="Menuhel">HELPDESK & MONITERING</a></li>
+                            </ul>
+                        <li><a href="Success_Project.html" id="Menusuc">SUCCESS STORY</a></li>
+
+                        <li><a href="News.html" id="Menunews">NEWS</a></li>
+                        <li><a href="https://www.irasia.com/listco/hk/plattnera/index.htm" id="Menuinv" target="_blank">INVESTOR RELATION</a></li>
+                        <li><a href="Contact_Us.html" id="Menucon">CONTACT US</a></li>
+                        <li><a href="Career.html" class="active" id="Menucar">CAREER</a></li>
+                    </ul>
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-title" data-aos="fade">
+        <div class="container">
+            <nav class="breadcrumbs">
+                <ol>
+                    <li><a href="index.html" id="headerhome">Home</a></li>
+                    <li class="current" id="headernew">Career</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="company-card10 col-lg-10 mx-auto mt-4 p-4">
+            <div class="company-banner10">
+                <img alt="Hero Image" src="assets/img/OUR_SS/3-2.webp">
+            </div>
+
+            <div class="company-header10 pt-6">
+                <!-- Company Logo -->
+                <img src="assets/img/Logo-PN.webp" alt="Company Logo" class="company-logo10">
+
+                <div class="company-info10">
+                    <div class="company-name10" id="Ban1">PLATTNERA</div>
+                    <!-- ประเภทบริษัท -->
+                    <div class="company-sector10" id="Ban2">Private Sector / Government</div>
+                    <!-- ตำแหน่งที่ตั้ง -->
+                    <div class="company-location10">
+                        <i class="bi bi-geo-alt location-icon10"></i>
+                        <span id="Ban3">Asoke, Bangkok</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <section id="blog-posts" class="blog-posts section">
+                        <div class="container">
+                            <div class="row gy-3 justify-content-center">
+                                <div class="col-lg-10 mx-auto">
+                                    <div class="job-card">
+                                        <div class="flex items-center job-header">
+                                            <img src="assets/img/Logo-PN.webp" alt="Logo" class="logo" style="width: 100px; height: auto;">
+                                            <div class="job-details">
+                                                <h2 class="job-title" id="Connew00">NameCass</h2>
+                                                <p class="company-name" id="Connew01">PLATTNERA</p>
+                                                <div class="location-salary">
+                                                    <i class="bi bi-geo-alt-fill d-flex align-items-center" style="color: darkorange "></i> &nbsp;
+                                                    <span class="location" id="Connew02">Loc</span>
+                                                    <i class="bi bi-coin d-flex align-items-center" style="color: darkorange "></i>  &nbsp;
+                                                    <span class="salary" id="Connew03">salary</span>
+                                                </div>
+                                            </div>
+                                            <a href="/details_jobs_home/4459" target="_blank">
+                                                <a href="BlogCar1.html">
+                                                    <button class="apply-button" id="Connew04">Apply Work</button>
+                                                </a>
+                                            </a>
+                                        </div>
+                                        <div class="job-description">
+                                            <p id="Connew05">- detal1</p>
+                                            <p id="Connew06">- detal2</p>
+                                            <p id="Connew07">- detal3</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="job-card">
+                                        <div class="flex items-center job-header">
+                                            <img src="assets/img/Logo-PN.webp" alt="Logo" class="logo" style="width: 100px; height: auto;">
+                                            <div class="job-details">
+                                                <h2 class="job-title" id="Connew10">NameCass</h2>
+                                                <p class="company-name" id="Connew11">PLATTNERA</p>
+                                                <div class="location-salary">
+                                                    <i class="bi bi-geo-alt-fill d-flex align-items-center" style="color: darkorange "></i> &nbsp;
+                                                    <span class="location" id="Connew12">Loc</span>
+                                                    <i class="bi bi-coin d-flex align-items-center" style="color: darkorange "></i>  &nbsp;
+                                                    <span class="salary" id="Connew13">salary</span>
+                                                </div>
+                                            </div>
+                                            <a href="/details_jobs_home/4459" target="_blank">
+                                                <a href="BlogCar2.html">
+                                                    <button class="apply-button" id="Connew14">Apply Work</button>
+                                                </a>
+                                            </a>
+                                        </div>
+                                        <div class="job-description">
+                                            <p id="Connew15">- detal1</p>
+                                            <p id="Connew16">- detal2</p>
+                                            <p id="Connew17">- detal3</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+                    <footer id="footer" class="footer position-relative dark-background">
+
+                        <div class="footer">
+                            <div class="container footer-top">
+                                <div class="row gy-4">
+                                    <div class="col-lg-2 col-md-2 footer-about">
+                                        <center>
+                                            <img src="assets/img/Logo-PN.webp" height="100">
+                                        </center>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 footer-about">
+                                        <div class="footer-contact pt-6">
+                                            <p id="foot1">170/9-10 4th Floor Ocean Tower 1</p>
+                                            <p id="foot2">Sukhumvit Soi 16, Ratchadapisek Rd., Klongtoey, Bangkok 10110</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 footer-about">
+                                        <div class="footer-contact pt-6">
+                                            <p><strong id="foot3">Phone:</strong> <span id="foot4">+66-2661-9922 to 8</span></p>
+                                            <p id="foot5">Fax: <span>+66-2661-9933</span></p>
+                                            <p><strong id="foot6">Email</strong></p>
+                                            <p><strong id="foot7">Sales / Operations :</strong> <span>enquiries@plattnera.com</span></p>
+                                            <p><strong id="foot8">Investor Relations:</strong> <span>ir@plattnera.com</span></p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-lg-2 col-md-2 footer-about">
+                                        <img src="assets/img/1213.webp" height="130" class="img_radius">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="container copyright text-center mt-4">
+                                <p>© <span>2024 Platt Nera International Limited</span></p>
+                            </div>
+                        </div>
+
+                    </footer>
+
+                    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+                    <div id="preloader"></div>
+
+                    <!-- Vendor JS Files -->
+                    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                    <script src="assets/vendor/php-email-form/validate.js"></script>
+                    <script src="assets/vendor/aos/aos.js"></script>
+                    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+                    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+                    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+                    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+                    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+                    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+                    <!-- Main JS File -->
+                    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

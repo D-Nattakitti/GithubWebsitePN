@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>PLATTNERA</title>
+    <meta name="description" content="Platt Nera International Limited. Industry Leader for IT Integrated Solutions and IT Support Services.">
+    <meta name="keywords" content="Platt Nera, plattnera, PlattNera, แพลทเนรา, แพลทเนร่า">
+    <meta name="author" content="Platt Nera International Limited">
+    <link href="assets/img/favicon2.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page" onload="checkCookie()">
+    <script>
+        function setCookie(cname, cvalue, exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+            let name = cname + "=";
+            let ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function checkCookie() {
+            let chklanguage = getCookie("language");
+            if (chklanguage != "") {
+                toggleLanguage(chklanguage);
+            } else {
+                if (chklanguage != "" && chklanguage != null) {
+                    setCookie("language", "English", 30);
+                }
+            }
+        }
+
+
+        function toggleLanguage(language) {
+            /* แถบเมนู */
+            let Menuhome = document.getElementById("Menuhome");
+            let Menuabo = document.getElementById("Menuabo");
+            let Menucompany = document.getElementById("Menucompany");
+            let Menuexe = document.getElementById("Menuexe");
+            let Menuour = document.getElementById("Menuour");
+            let Menubank = document.getElementById("Menubank");
+            let Menusoft = document.getElementById("Menusoft");
+            let Menusys = document.getElementById("Menusys");
+            let Menusur = document.getElementById("Menusur");
+            let Menutel = document.getElementById("Menutel");
+            let Menudis = document.getElementById("Menudis");
+            let Menuiot = document.getElementById("Menuiot");
+            let Menuhel = document.getElementById("Menuhel");
+            let Menusuc = document.getElementById("Menusuc");
+            let Menunews = document.getElementById("Menunews");
+            let Menuinv = document.getElementById("Menuinv");
+            let Menucon = document.getElementById("Menucon");
+            let Menucar = document.getElementById("Menucar");
+            /* เนื้อ */
+            let Connew00 = document.getElementById("Connew00");
+            let Connew01 = document.getElementById("Connew01");
+            let Connew02 = document.getElementById("Connew02");
+            let Connew03 = document.getElementById("Connew03");
+            let Connew04 = document.getElementById("Connew04");
+            let Connew05 = document.getElementById("Connew05");
+            let Connew06 = document.getElementById("Connew06");
+            let Connew07 = document.getElementById("Connew07");
+            let Connew08 = document.getElementById("Connew08");
+            let Connew09 = document.getElementById("Connew09");
+            let Connew010 = document.getElementById("Connew010");
+            let Connew011 = document.getElementById("Connew011");
+            let Connew012 = document.getElementById("Connew012");
+            let Connew013 = document.getElementById("Connew013");
+            let Connew014 = document.getElementById("Connew014");
+            let Connew015 = document.getElementById("Connew015");
+            let Connew016 = document.getElementById("Connew016");
+            let Connew017 = document.getElementById("Connew017");
+            let Connew018 = document.getElementById("Connew018");
+            let Read1 = document.getElementById("Read1");
+            let Read2 = document.getElementById("Read2");
+            let Read3 = document.getElementById("Read3");
+            let Read4 = document.getElementById("Read4");
+            let Read5 = document.getElementById("Read5");
+            let Read6 = document.getElementById("Read6");
+            let foot1 = document.getElementById("foot1");
+            let foot2 = document.getElementById("foot2");
+            let foot3 = document.getElementById("foot3");
+            let foot4 = document.getElementById("foot4");
+            let foot5 = document.getElementById("foot5");
+            let foot6 = document.getElementById("foot6");
+            let foot7 = document.getElementById("foot7");
+            let foot8 = document.getElementById("foot8");
+
+            if (language === "English") {
+                /* แถบเมนู */
+                Menuhome.innerHTML = "Home";
+                Menuabo.innerHTML = "About Us";
+                Menucompany.innerHTML = "Company Profile";
+                Menuexe.innerHTML = "Executive";
+                Menuour.innerHTML = "Our Solutions";
+                Menubank.innerHTML = "Banking Solutions";
+                Menusoft.innerHTML = "Software Development";
+                Menusys.innerHTML = "System Network Infrastructure";
+                Menusur.innerHTML = "Surveillancs Security";
+                Menutel.innerHTML = "Telecommunication";
+                Menudis.innerHTML = "Disaster Management";
+                Menuiot.innerHTML = "Internet Of Things (IOT)";
+                Menuhel.innerHTML = "Helpdesk & Monitering";
+                Menusuc.innerHTML = "Success Story";
+                Menunews.innerHTML = "News";
+                Menuinv.innerHTML = "Investor Relation";
+                Menucon.innerHTML = "Contact Us";
+                Menucar.innerHTML = "Career";
+
+                Connew00.innerHTML = "Welcome to ";
+                Connew01.innerHTML = "PLATTNERA";
+                Connew02.innerHTML = "At Platt Nera Group, we lead with innovation and a passion for excellence.Our mission goes beyond providing technology services we're dedicated to leveraging cutting-edge technology to create impactful opportunities in both environmental and social spheres, ensuring long-lasting value for all our stakeholders.";
+                Connew03.innerHTML = "Vision";
+                Connew04.innerHTML = "<center> &nbsp; &nbsp; To create opportunities through technology that benefit both the environment and society, ensuring value for all stakeholders.&nbsp; </center>";
+                Connew05.innerHTML = "Mission";
+                Connew06.innerHTML = "<center> &nbsp; To empower our customers to navigate ever-changing technology landscapes with confidence and control.&nbsp; </center>";
+                Connew07.innerHTML = "We are System Integrator";
+                Connew08.innerHTML = "Your trusted technology partner for sustainable success.";
+                Connew09.innerHTML = "With our deep expertise and experience in managing technology, we build and integrate systems that work seamlessly together, enhancing efficiency and aligning with your business needs. Our solutions are designed to maximize operational efficiency and drive business growth, adding tangible value to your organization.";
+                Connew010.innerHTML = "News";
+                Connew011.innerHTML = "PEA Unmanned Substation - Maintenance Training";
+                Connew012.innerHTML = "PEA's Operation and Power Grid Technology Division held unmanned substation maintenance training for officials from 12 provincial areas.";
+                Connew013.innerHTML = "BAAC LPS - Phase 1 GoLive";
+                Connew014.innerHTML = "The BAAC, in partnership with the TechXPlattnera working group, including SCB TechX and Platt Nera, is advancing its digital initiatives.";
+                Connew015.innerHTML = "BAAC LPS - PlattNera New Project";
+                Connew016.innerHTML = "BAAC has partnered with the TechXPlattnera working group, including SCB TechX and Platt Nera, to enhance its banking services.";
+                Connew017.innerHTML = "Our Customers";
+                Connew018.innerHTML = "Commitment to provide quality service to maximise customer satisfaction with over 10 years of extensive IT experience";
+                Read1.innerHTML = "ABOUT US";
+                Read2.innerHTML = "ABOUT US";
+                Read3.innerHTML = "ABOUT US";
+                Read4.innerHTML = "Read More";
+                Read5.innerHTML = "Read More";
+                Read6.innerHTML = "Read More";
+
+                foot1.innerHTML = "170/9-10 4th Floor Ocean Tower 1";
+                foot2.innerHTML = "Sukhumvit Soi 16, Ratchadapisek Rd., Klongtoey, Bangkok 10110";
+                foot3.innerHTML = "Phone";
+                foot4.innerHTML = "+66-2661-9922 to 8";
+                foot5.innerHTML = "Fax: <span>+66-2661-9933</span>";
+                foot6.innerHTML = "Email";
+                foot7.innerHTML = "Sales / Operations :";
+                foot8.innerHTML = "Investor Relations:";
+
+                /* ห้ามเอาออก เอาไว้สำหรับเก็บค่า */
+                setCookie("language", "English", 30);
+
+            }
+            else {
+                /* แถบเมนู */
+                Menuhome.innerHTML = "หน้าหลัก";
+                Menuabo.innerHTML = "เกี่ยวกับเรา";
+                Menucompany.innerHTML = "ประวัติบริษัท";
+                Menuexe.innerHTML = "คณะผู้บริหาร";
+                Menuour.innerHTML = "โซลูชั่นของเรา";
+                Menubank.innerHTML = "โซลูชั่นทางการเงิน";
+                Menusoft.innerHTML = "โซลูชั่นทางการพัฒนาระบบ";
+                Menusys.innerHTML = "โซลูชั่นทางระบบเครือข่าย";
+                Menusur.innerHTML = "โซลูชั่นทางด้านความปลอดภัย";
+                Menutel.innerHTML = "โซลูชั่นทางโทรคมนาคม";
+                Menudis.innerHTML = "โซลูชั่นทางระบบเตือนภัยทางภัยพิบัติ";
+                Menuiot.innerHTML = "โซลูชั่นทาง IOT";
+                Menuhel.innerHTML = "โซลูชั่นด้านการช่วยเหลือ";
+                Menusuc.innerHTML = "ผลงานของเรา";
+                Menunews.innerHTML = "ข่าวสารองค์กร";
+                Menuinv.innerHTML = "นักลงทุนสัมพันธ์";
+                Menucon.innerHTML = "ติดต่อเรา";
+                Menucar.innerHTML = "ร่วมงานกับเรา";
+
+                /* เนื้อ */
+                Connew00.innerHTML = "ยินดีต้อนรับสู่";
+                Connew01.innerHTML = "แพลท เนรา";
+                Connew02.innerHTML = "ที่ Platt Nera Group เรานำด้วยนวัตกรรมและความหลงใหลในความเป็นเลิศ พันธกิจของเราเกินกว่าการให้บริการด้านเทคโนโลยี เราทุ่มเทในการใช้เทคโนโลยีล้ำสมัยเพื่อสร้างโอกาสที่มีผลกระทบในด้านสิ่งแวดล้อมและสังคม พร้อมทั้งสร้างคุณค่าที่ยั่งยืนให้กับผู้มีส่วนได้ส่วนเสียทุกฝ่าย";
+                Connew03.innerHTML = "วิสัยทัศน์";
+                Connew04.innerHTML = "สร้างโอกาสผ่านเทคโนโลยีที่เป็นประโยชน์ต่อสิ่งแวดล้อมและสังคม พร้อมสร้างคุณค่าให้กับผู้มีส่วนได้ส่วนเสียทุกฝ่าย";
+                Connew05.innerHTML = "พันธกิจ";
+                Connew06.innerHTML = "เสริมศักยภาพให้ลูกค้าของเราสามารถนำทางผ่านภูมิทัศน์เทคโนโลยีที่เปลี่ยนแปลงตลอดเวลาได้ด้วยความมั่นใจและการควบคุม";
+                Connew07.innerHTML = "เราเป็นผู้ให้บริการด้านการผสานระบบ (System Integrator)";
+                Connew08.innerHTML = "พันธมิตรทางเทคโนโลยีที่คุณไว้วางใจ เพื่อความสำเร็จที่ยั่งยืน";
+                Connew09.innerHTML = "ด้วยความเชี่ยวชาญและประสบการณ์อันยาวนานในการจัดการเทคโนโลยี เราสร้างและผสานระบบให้ทำงานร่วมกันอย่างไร้รอยต่อ เพื่อเพิ่มประสิทธิภาพและสอดคล้องกับความต้องการทางธุรกิจของคุณ โซลูชันของเราได้รับการออกแบบมาเพื่อเพิ่มประสิทธิภาพในการดำเนินงานและขับเคลื่อนการเติบโตของธุรกิจ เพิ่มคุณค่าให้กับองค์กรของคุณอย่างเป็นรูปธรรม";
+                Connew010.innerHTML = "ข่าวสารองค์กร";
+                Connew011.innerHTML = "<h6><b>การฝึกอบรมการบำรุงรักษาสถานีไฟฟ้าย่อยไร้คนควบคุมของ PEA</b></h6>";
+                Connew012.innerHTML = "The Provincial Electricity Authority (PEA) โดยผ่านทางแผนกปฏิบัติการและเทคโนโลยีระบบสายส่ง ได้จัดการฝึกอบรมเกี่ยวกับการบำรุงรักษาระบบสถานีไฟฟ้าย่อยไร้คนควบคุมให้กับเจ้าหน้าที่ในเขตการไฟฟ้าทั้ง 12 แห่งทั่วประเทศ";
+                Connew013.innerHTML = "<h6><b>ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร (ธ.ก.ส.) ร่วมมือกับกลุ่มทำงาน TechXPlattnera</b></h6>";
+                Connew014.innerHTML = "ซึ่งประกอบด้วยบริษัท SCB TechX จำกัด ผู้เชี่ยวชาญด้านเทคโนโลยีดิจิทัลและผู้ให้บริการแพลตฟอร์มในรูปแบบบริการภายใต้กลุ่ม SCB X และบริษัท แพลตต์เนร่า จำกัด เพื่อผลักดันการดำเนินงานด้านดิจิทัลให้ก้าวหน้าผ่านความร่วมมือนี้";
+                Connew015.innerHTML = "<h6><b>ความร่วมมือระหว่าง BAAC และ TechXPlattnera</b></h6>";
+                Connew016.innerHTML = "ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร (BAAC) ได้ร่วมมือกับกลุ่มงาน TechXPlattnera ซึ่งรวมถึง SCB TechX ผู้เชี่ยวชาญด้านเทคโนโลยีดิจิทัลภายใต้ SCB X Group และ Platt Nera Co., Ltd. ผู้ให้บริการโซลูชันไอทีชั้นนำ เพื่อพัฒนาบริการธนาคารของธนาคารให้ดียิ่งขึ้น";
+                Connew017.innerHTML = "ลูกค้าของเรา";
+                Connew018.innerHTML = "มุ่งมั่นในการให้บริการที่มีคุณภาพเพื่อเพิ่มความพึงพอใจของลูกค้า ด้วยประสบการณ์ด้านไอทีมากกว่า 10 ปี";
+
+                Read1.innerHTML = "เกี่ยวกับเรา";
+                Read2.innerHTML = "เกี่ยวกับเรา";
+                Read3.innerHTML = "เกี่ยวกับเรา";
+                Read4.innerHTML = "อ่านข่าวเพิ่มเติม";
+                Read5.innerHTML = "อ่านข่าวเพิ่มเติม";
+                Read6.innerHTML = "อ่านข่าวเพิ่มเติม";
+
+                foot1.innerHTML = "170/9-10 ชั้น 4 อาคารโอเชี่ยน ทาวเวอร์ 1";
+                foot2.innerHTML = "ซอยสุขุมวิท 16 ถนนรัชดาภิเษก คลองเตย กรุงเทพฯ 10110";
+                foot3.innerHTML = "โทรศัพท์";
+                foot4.innerHTML = "+66-2661-9922 ต่อ 8";
+                foot5.innerHTML = "แฟกซ์ <span>+66-2661-9933</span";
+                foot6.innerHTML = "อีเมล";
+                foot7.innerHTML = "ฝ่ายขาย /ฝ่ายปฏิบัติการ";
+                foot8.innerHTML = "นักลงทุนสัมพันธ์";
+
+                /* ห้ามเอาออก เอาไว้สำหรับเก็บค่า */
+                setCookie("language", "Thai", 30);
+
+            }
+        }
+    </script>
+
+    <header id="header" class="header sticky-top">
+
+        <div class="topbar d-flex align-items-center dark-background">
+            <div class="container d-flex justify-content-between">
+                <div class="contact-info d-flex align-items-center">
+                </div>
+                <div class="language-switcher d-flex align-items-center">
+                    <a href="#" onclick="toggleLanguage('English')" id="change_eng">
+                        <img src="assets/img/EN.webp" alt="EN" style="width:25px; height:15px;">
+                    </a>
+                    <a href="#" onclick="toggleLanguage('Thai')" id="change_th">
+                        <img src="assets/img/TH.webp" alt="TH" style="width:25px; height:15px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="branding">
+
+            <div class="container position-relative d-flex align-items-center justify-content-between">
+                <a href="index.html" class="logo d-flex align-items-center">
+                    <h1 class="sitename">PLATTNERA<br></h1>
+                </a>
+
+                <nav id="navmenu" class="navmenu">
+                    <ul>
+                        <li><a href="Home.html" class="active" id="Menuhome">HOME</a></li>
+                        <li class="dropdown">
+                            <a href="#"><span id="Menuabo">ABOUT US</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                            <ul>
+                                <li><a href="Company_Profile.html" id="Menucompany">COMPANY PROFILE</a></li>
+                                <li><a href="Executive.html" id="Menuexe">EXECUTIVE</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#"><span id="Menuour">OUR SOLUTION</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                            <ul>
+                                <li><a href="Banking_Industry_Solutions.html" id="Menubank">BANKING SOLUTIONS</a></li>
+                                <li><a href="Software_Development.html" id="Menusoft">SOFTWARE DEVELOPMENT</a></li>
+                                <li><a href="System_&_Network_Infrastructure.html" id="Menusys">SYSTEM & NETWORK INFRASTRUCTURE</a></li>
+                                <li><a href="Surveillance_Security.html" id="Menusur">SURVEILLANCE SECURITY</a></li>
+                                <li><a href="Telecommunication.html" id="Menutel">TELECOMMUNICATION</a></li>
+                                <li><a href="Disater.html" id="Menudis">Disaster Management</a></li>
+                                <li><a href="Internet_Of_Things.html" id="Menuiot">INTERNET OF (IoT)</a></li>
+                                <li><a href="Helpdesk_&_Monitering.html" id="Menuhel">HELPDESK & MONITERING</a></li>
+                            </ul>
+                        <li><a href="Success_Project.html" id="Menusuc">SUCCESS STORY</a></li>
+                        <li><a href="News.html" id="Menunews">NEWS</a></li>
+                        <li><a href="https://www.irasia.com/listco/hk/plattnera/index.htm" id="Menuinv" target="_blank">INVESTOR RELATION</a></li>
+                        <li><a href="Contact_Us.html" id="Menucon">CONTACT US</a></li>
+                        <li><a href="Career.html" id="Menucar">CAREER</a></li>
+                    </ul>
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
+            <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-item active">
+                    <img src="assets/img/Hero_Wel.webp" alt="bannerphoto1">
+                    <div class="carousel-container">
+                        <h2 id="herohome1-title">
+                            <span id="Connew00" style="color : black">Welcome to</span>
+                            <span id="Connew01" style="color : forestgreen">PLATTNERA</span>
+                        </h2>
+                        <p>
+                            <p id="Connew02">
+                                "At Platt Nera Group, we lead with innovation and a passion for excellence. Our mission goes beyond providing technology services we're dedicated to leveraging cutting-edge technology to create impactful opportunities in both environmental and social spheres, ensuring long-lasting value for all our stakeholders."
+                            </p>
+                        </p>
+                        <a href="COMPANY PROFILE.html" class="btn-get-started" id="Read1">ABOUT US</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="assets/img/Hero_Mis.webp" alt="bannerphoto2">
+                    <div class="carousel-container">
+                        <h2 id="Connew03">Vision</h2>
+                        <p>
+                            <p id="Connew04">
+                                To create opportunities through technology that benefit both the environment and society, ensuring value for all stakeholders.
+                            </p>
+                        </p>
+                        <a href="COMPANY PROFILE.html" class="btn-get-started" id="Read2">ABOUT US</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="assets/img/Hero_Vis.webp" alt="bannerphoto3">
+                    <div class="carousel-container">
+                        <h2 id="Connew05">Mission</h2>
+                        <p>
+                            <p id="Connew06">
+                                To empower our customers to navigate ever-changing technology landscapes with confidence and control.
+                            </p>
+                        </p>
+                        <a href="COMPANY PROFILE.html" class="btn-get-started" id="Read3">ABOUT US</a>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+                </a>
+
+            </div>
+
+        </section>
+        <section id="about" class="section about">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row gy-5">
+                    <div class="col-lg-12 order-2 order-lg-1 content">
+                        <h1 style="color : darkorange" id="Connew07">We are System Integrator</h1>
+                        <h4 id="Connew08">Your trusted technology partner for sustainable success.</h4>
+                        <p class="fst-italic">
+                            <h6>
+                                <span id="Connew09">
+                                    With our deep expertise and experience in managing technology, we build and integrate systems that work seamlessly together, enhancing efficiency and aligning with your business needs. Our solutions are designed to maximize operational efficiency and drive business growth, adding tangible value to your organization.
+                                </span>
+                            </h6>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container section-title-l" data-aos="fade-up">
+            <h2 id="Connew010">News</h2>
+        </div>
+
+        <section id="servicesx" class="servicesg section">
+            <div class="container">
+
+                <div class="row gy-4">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="servicesg-item position-relative">
+                            <center>
+                                <img src="assets/img/NES_LPS/8.webp" height="150" class="img_radius">
+                                <a href="Blognews1.html" class="stretched-link">
+                                    <h3 id="Connew011">
+                                        PEA Unmanned Substation - Maintenance Training
+                                    </h3>
+                                </a>
+                            </center>
+
+                            <p id="Connew012">
+                                The Provincial Electricity Authority (PEA), through its Operation and Power Grid Technology Division, organized training sessions on maintaining Unmanned Substation systems for officials across all 12 Provincial Electricity Areas.
+                            </p>
+                            <br>
+                            <div class="read-more">
+                                <a href="blognews1.html" id="Read4">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="servicesg-item position-relative">
+                            <center>
+                                <img src="assets/img/NES_LPS/7.webp" height="150" class="img_radius">
+                                <a href="Blognews2.html" class="stretched-link">
+                                    <h3 id="Connew013">BAAC Collaboration with TechXPlattnera</h3>
+                                </a>
+                            </center>
+
+                            <p id="Connew014">
+                                The Bank for Agriculture and Agricultural Cooperatives (BAAC), in partnership with the TechXPlattnera working group—which includes SCB TechX Co., Ltd., a digital technology expert and platform-as-a-service provider under SCB X Group, and Platt Nera Co., Ltd.—is advancing its digital initiatives through this collaboration.
+
+                            </p>
+                            <br>
+                            <div class="read-more">
+                                <a href="blognews1.html" id="Read5">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="servicesg-item position-relative">
+                            <center>
+                                <img src="assets/img/NES_LPS/1.webp" height="150" class="img_radius">
+                                <a href="Blognews3.html" class="stretched-link">
+                                    <h3 id="Connew015">BAAC - TechXPlattnera Collaboration</h3>
+                                </a>
+                            </center>
+
+                            <p id="Connew016">
+                                BAAC has partnered with the TechXPlattnera working group, including SCB TechX, a specialist in digital technology under the SCB X Group, and Platt Nera Co., Ltd., a leading IT solutions provider, to enhance its banking services.
+
+                            </p>
+                            <br>
+                            <div class="read-more">
+                                <a href="blognews1.html" id="Read6">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="clients" class="section clients">
+            <div class="container section-title" data-aos="fade-up">
+                <h2 id="Connew017">Our Customers</h2>
+                <p id="Connew018">
+                    ”Dedicated to delivering top-quality service and maximizing customer satisfaction, backed by over a decade of extensive IT experience.”
+                </p>
+            </div>
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper init-swiper">
+                    <script type="application/json" class="swiper-config">
+                        {
+                          "loop": true,
+                          "speed": 600,
+                          "autoplay": {
+                            "delay": 5000
+                          },
+                          "slidesPerView": "auto",
+                          "pagination": {
+                            "el": ".swiper-pagination",
+                            "type": "bullets",
+                            "clickable": true
+                          },
+                          "breakpoints": {
+                            "320": {
+                              "slidesPerView": 2,
+                              "spaceBetween": 40
+                            },
+                            "480": {
+                              "slidesPerView": 3,
+                              "spaceBetween": 60
+                            },
+                            "640": {
+                              "slidesPerView": 4,
+                              "spaceBetween": 80
+                            },
+                            "992": {
+                              "slidesPerView": 6,
+                              "spaceBetween": 120
+                            }
+                          }
+                        }
+                    </script>
+
+                    <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide"><img src="assets/img/Logo_Our_Customers/ลูกค้า-01.webp" class="img-fluid" alt="customer1"></div>
+                        <div class="swiper-slide"><img src="assets/img/Logo_Our_Customers/ลูกค้า-02.webp" class="img-fluid" alt="customer2"></div>
+                        <div class="swiper-slide"><img src="assets/img/Logo_Our_Customers/ลูกค้า-03.webp" class="img-fluid" alt="customer3"></div>
+                        <div class="swiper-slide"><img src="assets/img/Logo_Our_Customers/ลูกค้า-04.webp" class="img-fluid" alt="customer4"></div>
+                        <div class="swiper-slide"><img src="assets/img/Logo_Our_Customers/ลูกค้า-05.webp" class="img-fluid" alt="customer5"></div>
+                        <div class="swiper-slide"><img src="assets/img/Logo_Our_Customers/ลูกค้า-06.webp" class="img-fluid" alt="customer6"></div>
+                        <div class="swiper-slide"><img src="assets/img/Logo_Our_Customers/ลูกค้า-07.webp" class="img-fluid" alt="customer7"></div>
+                        <div class="swiper-slide"><img src="assets/img/Logo_Our_Customers/ลูกค้า-08.webp" class="img-fluid" alt="customer8"></div>
+                        <div class="swiper-slide"><img src="assets/img/Logo_Our_Customers/ลูกค้า-09.webp" class="img-fluid" alt="customer9"></div>
+                        <div class="swiper-slide"><img src="assets/img/Logo_Our_Customers/ลูกค้า-10.webp" class="img-fluid" alt="customer10"></div>
+                        <div class="swiper-slide"><img src="assets/img/Logo_Our_Customers/ลูกค้า-11.webp" class="img-fluid" alt="customer11"></div>
+                        <div class="swiper-slide"><img src="assets/img/Logo_Our_Customers/ลูกค้า-12.webp" class="img-fluid" alt="customer12"></div>
+                        <div class="swiper-slide"><img src="assets/img/Logo_Our_Customers/ลูกค้า-13.webp" class="img-fluid" alt="customer13"></div>
+                        <div class="swiper-slide"><img src="assets/img/Logo_Our_Customers/ลูกค้า-14.webp" class="img-fluid" alt="customer14"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer position-relative dark-background">
+        <div class="footer">
+            <div class="container footer-top">
+                <div class="row gy-4">
+                    <div class="col-lg-2 col-md-2 footer-about">
+                        <center>
+                            <img src="assets/img/Logo-PN.webp" height="100">
+                        </center>
+                    </div>
+                    <div class="col-lg-4 col-md-4 footer-about">
+                        <div class="footer-contact pt-6">
+                            <p id="foot1">170/9-10 4th Floor Ocean Tower 1</p>
+                            <p id="foot2">Sukhumvit Soi 16, Ratchadapisek Rd., Klongtoey, Bangkok 10110</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 footer-about">
+                        <div class="footer-contact pt-6">
+                            <p><strong id="foot3">Phone:</strong> <span id="foot4">+66-2661-9922 to 8</span></p>
+                            <p id="foot5">Fax: <span>+66-2661-9933</span></p>
+                            <p><strong id="foot6">Email</strong></p>
+                            <p><strong id="foot7">Sales / Operations :</strong> <span>enquiries@plattnera.com</span></p>
+                            <p><strong id="foot8">Investor Relations:</strong> <span>ir@plattnera.com</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 footer-about">
+                        <img src="assets/img/1213.webp" height="130" class="img_radius">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container copyright text-center mt-4">
+                <p>© <span>2024 Platt Nera International Limited</span></p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/changelanguage.js"></script>
+
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <div id="preloader"></div>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

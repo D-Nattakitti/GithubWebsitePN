@@ -1,0 +1,830 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>PLATTNERA</title>
+    <meta name="description" content="Platt Nera International Limited. Industry Leader for IT Integrated Solutions and IT Support Services.">
+    <meta name="keywords" content="Platt Nera, plattnera, PlattNera, แพลทเนรา, แพลทเนร่า">
+    <meta name="author" content="Platt Nera International Limited">
+    <link href="assets/img/favicon2.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page" onload="checkCookie()">
+    <script>
+        function setCookie(cname, cvalue, exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+            let name = cname + "=";
+            let ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function checkCookie() {
+            let chklanguage = getCookie("language");
+            if (chklanguage != "") {
+                toggleLanguage(chklanguage);
+            } else {
+                if (chklanguage != "" && chklanguage != null) {
+                    setCookie("language", "English", 30);
+                }
+            }
+        }
+
+
+        function toggleLanguage(language) {
+
+            let Menuhome = document.getElementById("Menuhome");
+            let Menuabo = document.getElementById("Menuabo");
+            let Menucompany = document.getElementById("Menucompany");
+            let Menuexe = document.getElementById("Menuexe");
+            let Menuour = document.getElementById("Menuour");
+            let Menubank = document.getElementById("Menubank");
+            let Menusoft = document.getElementById("Menusoft");
+            let Menusys = document.getElementById("Menusys");
+            let Menusur = document.getElementById("Menusur");
+            let Menutel = document.getElementById("Menutel");
+            let Menudis = document.getElementById("Menudis");
+            let Menuiot = document.getElementById("Menuiot");
+            let Menuhel = document.getElementById("Menuhel");
+            let Menusuc = document.getElementById("Menusuc");
+
+            let Menunews = document.getElementById("Menunews");
+            let Menuinv = document.getElementById("Menuinv");
+            let Menucon = document.getElementById("Menucon");
+            let Menucar = document.getElementById("Menucar");
+
+            let Connew00 = document.getElementById("Connew00");
+            let Connew01 = document.getElementById("Connew01");
+            let Connew02 = document.getElementById("Connew02");
+            let Connew03 = document.getElementById("Connew03");
+            let Connew04 = document.getElementById("Connew04");
+            let Connew05 = document.getElementById("Connew05");
+            let Connew06 = document.getElementById("Connew06");
+            let Connew07 = document.getElementById("Connew07");
+            let Connew08 = document.getElementById("Connew08");
+
+            let Connew10 = document.getElementById("Connew10");
+            let Connew11 = document.getElementById("Connew11");
+            let Connew12 = document.getElementById("Connew12");
+            let Connew13 = document.getElementById("Connew13");
+            let Connew14 = document.getElementById("Connew14");
+            let Connew15 = document.getElementById("Connew15");
+            let Connew16 = document.getElementById("Connew16");
+            let Connew17 = document.getElementById("Connew17");
+            let Connew18 = document.getElementById("Connew18");
+
+            let Connew20 = document.getElementById("Connew20");
+            let Connew21 = document.getElementById("Connew21");
+            let Connew22 = document.getElementById("Connew22");
+            let Connew23 = document.getElementById("Connew23");
+            let Connew24 = document.getElementById("Connew24");
+            let Connew25 = document.getElementById("Connew25");
+            let Connew26 = document.getElementById("Connew26");
+            let Connew27 = document.getElementById("Connew27");
+            let Connew28 = document.getElementById("Connew28");
+            let Connew29 = document.getElementById("Connew29");
+
+            let Connew30 = document.getElementById("Connew30");
+            let Connew31 = document.getElementById("Connew31");
+            let Connew32 = document.getElementById("Connew32");
+            let Connew33 = document.getElementById("Connew33");
+            let Connew34 = document.getElementById("Connew34");
+            let Connew35 = document.getElementById("Connew35");
+            let Connew36 = document.getElementById("Connew36");
+            let Connew37 = document.getElementById("Connew37");
+            let Connew38 = document.getElementById("Connew38");
+            let Connew39 = document.getElementById("Connew39");
+
+            let Connew40 = document.getElementById("Connew40");
+            let Connew41 = document.getElementById("Connew41");
+            let Connew42 = document.getElementById("Connew42");
+            let Connew43 = document.getElementById("Connew43");
+            let Connew44 = document.getElementById("Connew44");
+            let Connew45 = document.getElementById("Connew45");
+            let Connew46 = document.getElementById("Connew46");
+            let Connew47 = document.getElementById("Connew47");
+            let Connew48 = document.getElementById("Connew48");
+            let Connew49 = document.getElementById("Connew49");
+
+            let Connew50 = document.getElementById("Connew50");
+            let Connew51 = document.getElementById("Connew51");
+            let Connew52 = document.getElementById("Connew52");
+            let Connew53 = document.getElementById("Connew53");
+            let Connew54 = document.getElementById("Connew54");
+            let Connew55 = document.getElementById("Connew55");
+            let Connew56 = document.getElementById("Connew56");
+            let Connew57 = document.getElementById("Connew57");
+            let Connew58 = document.getElementById("Connew58");
+            let Connew59 = document.getElementById("Connew59");
+            let Connew510 = document.getElementById("Connew510");
+            let Connew511 = document.getElementById("Connew511");
+
+            let Connew60 = document.getElementById("Connew60");
+            let Connew61 = document.getElementById("Connew61");
+            let Connew62 = document.getElementById("Connew62");
+            let Connew63 = document.getElementById("Connew63");
+            let Connew64 = document.getElementById("Connew64");
+            let Connew65 = document.getElementById("Connew65");
+            let Connew66 = document.getElementById("Connew66");
+            let Connew67 = document.getElementById("Connew67");
+            let Connew68 = document.getElementById("Connew68");
+            let Connew69 = document.getElementById("Connew69");
+
+            let Connew70 = document.getElementById("Connew70");
+            let Connew71 = document.getElementById("Connew71");
+            let Connew72 = document.getElementById("Connew72");
+            let Connew73 = document.getElementById("Connew73");
+            let Connew74 = document.getElementById("Connew74");
+            let Connew75 = document.getElementById("Connew75");
+
+            if (language === "English") {
+
+                Menuhome.innerHTML = "Home";
+                Menuabo.innerHTML = "About Us";
+                Menucompany.innerHTML = "Company Profile";
+                Menuexe.innerHTML = "Executive";
+                Menuour.innerHTML = "Our Solutions";
+                Menubank.innerHTML = "Banking Solutions";
+                Menusoft.innerHTML = "Software Development";
+                Menusys.innerHTML = "System Network Infrastructure";
+                Menusur.innerHTML = "Surveillancs Security";
+                Menutel.innerHTML = "Telecommunication";
+                Menudis.innerHTML = "Disaster Management";
+                Menuiot.innerHTML = "Internet Of Things (IOT)";
+                Menuhel.innerHTML = "Helpdesk & Monitering";
+                Menusuc.innerHTML = "Success Story";
+
+                Menunews.innerHTML = "News";
+                Menuinv.innerHTML = "Investor Relation";
+                Menucon.innerHTML = "Contact Us";
+                Menucar.innerHTML = "Career";
+
+                Connew00.innerHTML = "Platt Nera in ATM Maintenance: Installation of Passbook Automatic Machines";
+                Connew01.innerHTML = "Customer: Bank of Agriculture and Agricultural Co-operative (BAAC)";
+                Connew02.innerHTML = "Contract Value: 11 million baht (across 3 contracts)";
+                Connew03.innerHTML = "Installation Period: 2021 – Present";
+                Connew04.innerHTML = "Project Details:";
+                Connew05.innerHTML = "Maintenance of 932 Automatic Teller Machines";
+                Connew06.innerHTML = "Contract Value: 157 million baht";
+                Connew07.innerHTML = "Installation Timeline: 210 days (2023-2024)";
+                Connew08.innerHTML = "Installation of Passbook Automatic Machines at 1,242 sites";
+
+                Connew10.innerHTML = "Platt Nera in ATM and Passbook Automatic Machine Leasing";
+                Connew11.innerHTML = "Customer: Government Savings Bank";
+                Connew12.innerHTML = "Contract Value: 11 million baht (across 3 contracts)";
+                Connew13.innerHTML = "Contract Value: 1,200 million baht";
+                Connew14.innerHTML = "Installation Period: 2021 – 2026";
+                Connew15.innerHTML = "Project Details:";
+                Connew16.innerHTML = "Installation of 2,900 Automatic Teller Machines";
+                Connew17.innerHTML = "Contract Value: 192 million baht";
+                Connew18.innerHTML = "Installation of Passbook Automatic Machines at 790 sites";
+
+                Connew20.innerHTML = "Platt Nera with the Provincial Electricity Authority (PEA)";
+                Connew21.innerHTML = "Contract Value: 620 million baht (across 5 contracts)";
+                Connew22.innerHTML = "Installation Period: 2017 – Present";
+                Connew23.innerHTML = "Installation Period: 2021 – 2026";
+                Connew24.innerHTML = "Project Details:";
+                Connew25.innerHTML = "Installation of Unmanned Substation Systems at 467 sites";
+                Connew26.innerHTML = "Integration of CCTV and NVR systems";
+                Connew27.innerHTML = "Fire alarm, intrusion detection, and access control systems";
+                Connew28.innerHTML = "Building automation systems";
+                Connew29.innerHTML = "Ongoing training and operation support";
+
+                Connew30.innerHTML = "Platt Nera in Loan Processing System LPS";
+                Connew31.innerHTML = "Customer: Bank of Agriculture and Agricultural Co-operative (BAAC)";
+                Connew32.innerHTML = "Contract Value: 647 million baht";
+                Connew33.innerHTML = "Installation Period: 2023 – Present";
+                Connew34.innerHTML = "Installation Period: 2021 – 2026";
+                Connew35.innerHTML = "Project Details:";
+                Connew36.innerHTML = "Development of Loan Processing System";
+                Connew37.innerHTML = "Requirement gathering, development, and testing";
+                Connew38.innerHTML = "IT infrastructure installation and monitoring";
+                Connew39.innerHTML = "Installation of hardware, operating systems, ESX, security measures, Backup DR, and DC solutions";
+
+                Connew40.innerHTML = "Geo-Informatics and Space Technology Development Agency (GISTDA)";
+                Connew41.innerHTML = "Success Story in Telecom Business: Geo-Informatics and Space Technology Development Agency (GISTDA)";
+                Connew42.innerHTML = "Contract Value: 169 million baht";
+                Connew43.innerHTML = "Installation Period: 500 days (2014 – 2017)";
+                Connew44.innerHTML = "Project Details:";
+                Connew45.innerHTML = "Installation of 1 satellite station with a 13.56m antenna (X-band and S-band)";
+                Connew46.innerHTML = "Integration with RadarSat-2, Cosmo-Skymed, and ThaiChote systems";
+                Connew47.innerHTML = "System monitoring and control";
+                Connew48.innerHTML = "Factory and on-site training";
+                Connew49.innerHTML = "Current Status: Installation and operation";
+
+                Connew50.innerHTML = "Thai Meteorological Department (TMD)";
+                Connew51.innerHTML = "Success Story in Telecom Business: Thai Meteorological Department(TMD)";
+                Connew52.innerHTML = "Contract Value: 187 million baht";
+                Connew53.innerHTML = "Installation Period:  460 days (2011 – 2012)";
+                Connew54.innerHTML = "Project Details:";
+                Connew55.innerHTML = "Installation of 3 satellite stations";
+                Connew56.innerHTML = "Polar Orbiting 2.4m LX-band Antenna";
+                Connew57.innerHTML = "Geostationary 3.8m L-band Antenna for MTSAT";
+                Connew58.innerHTML = "Geostationary 3.8m L-band Antenna for FY2";
+                Connew59.innerHTML = "Integration with TMD systems";
+                Connew510.innerHTML = "Training and operation support";
+                Connew511.innerHTML = "Current Status: Project completed";
+
+                Connew60.innerHTML = "National Disaster Warning Center (NDWC)";
+                Connew61.innerHTML = "Success Story in Telecom Business: National Disaster Warning Center (NDWC)";
+                Connew62.innerHTML = "Contract Value: 162 million baht";
+                Connew63.innerHTML = "Installation Period: 330 days (2009 – 2010)";
+                Connew64.innerHTML = "Project Details:";
+                Connew65.innerHTML = "Installation of Tsunami Buoys in the Andaman Sea";
+                Connew66.innerHTML = "Implementation of Tsunami Detection Systems";
+                Connew67.innerHTML = "Integration with National Warning Systems";
+                Connew68.innerHTML = "Training and operation support";
+                Connew69.innerHTML = "Current Status: Operational and supported";
+
+                Connew70.innerHTML = "Bank of Agriculture and Agricultural Co-operative (BAAC)";
+                Connew71.innerHTML = "Customer: Bank of Agriculture and Agricultural Co-operative (BAAC)";
+                Connew72.innerHTML = "Contract Value: 647 million baht";
+                Connew73.innerHTML = "Installation Period: 15 Years (2006 – 2020)";
+                Connew74.innerHTML = "Project Details:";
+                Connew75.innerHTML = " Platt Nera established a revenue-sharing model valued at 3,000 million baht. We invested in the development and deployment of a comprehensive ATM system, which included the delivery and installation of 1,300 ATMs. Additionally, we set up a 24/7 data center to support BAAC’s operations, along with software for ATM transactions and switching (Base24). Our dedicated team provided continuous support to BAAC throughout the entire 15-years contract period.";
+
+                /* ห้ามเอาออก เอาไว้สำหรับเก็บค่า */
+                setCookie("language", "English", 30);
+
+            }
+            else {
+
+                Menuhome.innerHTML = "หน้าหลัก";
+                Menuabo.innerHTML = "เกี่ยวกับเรา";
+                Menucompany.innerHTML = "ประวัติบริษัท";
+                Menuexe.innerHTML = "คณะผู้บริหาร";
+                Menuour.innerHTML = "โซลูชั่นของเรา";
+                Menubank.innerHTML = "โซลูชั่นทางการเงิน";
+                Menusoft.innerHTML = "โซลูชั่นทางการพัฒนาระบบ";
+                Menusys.innerHTML = "โซลูชั่นทางระบบเครือข่าย";
+                Menusur.innerHTML = "โซลูชั่นทางด้านความปลอดภัย";
+                Menutel.innerHTML = "โซลูชั่นทางโทรคมนาคม";
+                Menudis.innerHTML = "โซลูชั่นทางระบบเตือนภัยทางภัยพิบัติ";
+                Menuiot.innerHTML = "โซลูชั่นทาง IOT";
+                Menuhel.innerHTML = "โซลูชั่นด้านการช่วยเหลือ";
+                Menusuc.innerHTML = "ผลงานของเรา";
+
+                Menunews.innerHTML = "ข่าวสารองค์กร";
+                Menuinv.innerHTML = "นักลงทุนสัมพันธ์";
+                Menucon.innerHTML = "ติดต่อเรา";
+                Menucar.innerHTML = "ร่วมงานกับเรา";
+
+                Connew00.innerHTML = "Platt Nera กับการบำรุงรักษา ATM: การติดตั้งเครื่องสมุดเงินฝากอัตโนมัติ";
+                Connew01.innerHTML = "ลูกค้า: ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร (ธ.ก.ส.)";
+                Connew02.innerHTML = "มูลค่าสัญญา: 11 ล้านบาท (รวม 3 สัญญา)";
+                Connew03.innerHTML = "ระยะเวลาการติดตั้ง: ตั้งแต่ปี 2021 จนถึงปัจจุบัน";
+                Connew04.innerHTML = "รายละเอียดโครงการ:";
+                Connew05.innerHTML = "บำรุงรักษาเครื่องเอทีเอ็มอัตโนมัติ 932 เครื่อง";
+                Connew06.innerHTML = "มูลค่าสัญญา: 157 ล้านบาท";
+                Connew07.innerHTML = "ระยะเวลาการติดตั้ง: 210 วัน (ปี 2023-2024)";
+                Connew08.innerHTML = "ติดตั้งเครื่องสมุดเงินฝากอัตโนมัติใน 1,242 สาขา";
+
+                Connew10.innerHTML = "Platt Nera กับการเช่าเครื่อง ATM และเครื่องสมุดเงินฝากอัตโนมัติ";
+                Connew11.innerHTML = "ลูกค้า: ธนาคารออมสิน";
+                Connew12.innerHTML = "มูลค่าสัญญา: 11 ล้านบาท (รวม 3 สัญญา)";
+                Connew13.innerHTML = "มูลค่าสัญญารวม: 1,200 ล้านบาท";
+                Connew14.innerHTML = "ระยะเวลาการติดตั้ง: 2021 – 2026";
+                Connew15.innerHTML = "รายละเอียดโครงการ:";
+                Connew16.innerHTML = "ติดตั้งเครื่องเอทีเอ็มอัตโนมัติ 2,900 เครื่อง";
+                Connew17.innerHTML = "มูลค่าสัญญา: 192 ล้านบาท";
+                Connew18.innerHTML = "ติดตั้งเครื่องสมุดเงินฝากอัตโนมัติใน 790 แห่ง";
+
+                Connew20.innerHTML = "Platt Nera กับการไฟฟ้าส่วนภูมิภาค (PEA)";
+                Connew21.innerHTML = "มูลค่าสัญญา: 620 ล้านบาท (รวม 5 สัญญา)";
+                Connew22.innerHTML = "ระยะเวลาการติดตั้ง: 2017 – ปัจจุบัน";
+                Connew23.innerHTML = "ระยะเวลาการติดตั้ง: 2021 – 2026";
+                Connew24.innerHTML = "รายละเอียดโครงการ:";
+                Connew25.innerHTML = "ติดตั้งระบบสถานีไฟฟ้าย่อยไร้คนควบคุมใน 467 แห่ง";
+                Connew26.innerHTML = "รวมระบบกล้องวงจรปิด (CCTV) และเครื่องบันทึกวิดีโอเครือข่าย (NVR)";
+                Connew27.innerHTML = "ระบบเตือนภัยอัคคีภัย ระบบตรวจจับการบุกรุก และระบบควบคุมการเข้าถึง";
+                Connew28.innerHTML = "ระบบอัตโนมัติสำหรับอาคาร";
+                Connew29.innerHTML = "การฝึกอบรมและสนับสนุนการปฏิบัติงานอย่างต่อเนื่อง";
+
+                Connew30.innerHTML = "Platt Nera กับระบบประมวลผลสินเชื่อ (Loan Processing System - LPS)";
+                Connew31.innerHTML = "ลูกค้า: ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร (ธ.ก.ส.)";
+                Connew32.innerHTML = "มูลค่าสัญญา: 647 ล้านบาท";
+                Connew33.innerHTML = "ระยะเวลาการติดตั้ง: 2023 – ปัจจุบัน";
+                Connew34.innerHTML = "ระยะเวลาการติดตั้ง: 2021 – 2026";
+                Connew35.innerHTML = "รายละเอียดโครงการ:";
+                Connew36.innerHTML = "พัฒนาระบบประมวลผลสินเชื่อ (Loan Processing System)";
+                Connew37.innerHTML = "การรวบรวมความต้องการ พัฒนา และทดสอบระบบ";
+                Connew38.innerHTML = "ติดตั้งและตรวจสอบโครงสร้างพื้นฐานด้านไอที";
+                Connew39.innerHTML = "ติดตั้งฮาร์ดแวร์ ระบบปฏิบัติการ ESX มาตรการความปลอดภัย การสำรองข้อมูล DR และโซลูชันศูนย์ข้อมูล (DC)";
+          
+                Connew40.innerHTML = "สำนักงานพัฒนาเทคโนโลยีอวกาศและภูมิสารสนเทศ (GISTDA)";
+                Connew41.innerHTML = "เรื่องราวความสำเร็จในธุรกิจโทรคมนาคม: Geo-Informatics and Space Technology Development Agency (GISTDA)";
+                Connew42.innerHTML = "มูลค่าสัญญา: 169 ล้านบาท";
+                Connew43.innerHTML = "ระยะเวลาการติดตั้ง: 500 วัน (2014 – 2017)";
+                Connew44.innerHTML = "รายละเอียดโครงการ:";
+                Connew45.innerHTML = "ติดตั้งสถานีดาวเทียม 1 สถานี พร้อมเสาอากาศขนาด 13.56 เมตร (X-band และ S-band)";
+                Connew46.innerHTML = "การรวมระบบกับ RadarSat-2, Cosmo-Skymed และระบบไทยโชต";
+                Connew47.innerHTML = "ระบบตรวจสอบและควบคุมการทำงาน";
+                Connew48.innerHTML = "การฝึกอบรมทั้งในโรงงานและในสถานที่ติดตั้ง";
+                Connew49.innerHTML = "สถานะปัจจุบัน: ติดตั้งและดำเนินการ";
+
+                Connew50.innerHTML = "กรมอุตุนิยมวิทยา (TMD)";
+                Connew51.innerHTML = "เรื่องราวความสำเร็จในธุรกิจโทรคมนาคม: กรมอุตุนิยมวิทยา (TMD)";
+                Connew52.innerHTML = "มูลค่าสัญญา: 187 ล้านบาท";
+                Connew53.innerHTML = "ระยะเวลาการติดตั้ง: 460 วัน (2011 – 2012)";
+                Connew54.innerHTML = "รายละเอียดโครงการ:";
+                Connew55.innerHTML = "ติดตั้งสถานีดาวเทียม 3 สถานี";
+                Connew56.innerHTML = "เสาอากาศ Polar Orbiting ขนาด 2.4 เมตร (LX-band)";
+                Connew57.innerHTML = "เสาอากาศ Geostationary ขนาด 3.8 เมตร (L-band) สำหรับ MTSAT";
+                Connew58.innerHTML = "เสาอากาศ Geostationary ขนาด 3.8 เมตร (L-band) สำหรับ FY2";
+                Connew59.innerHTML = "การรวมระบบกับระบบของ TMD";
+                Connew510.innerHTML = "การฝึกอบรมและสนับสนุนการปฏิบัติงาน";
+                Connew511.innerHTML = "สถานะปัจจุบัน: โครงการเสร็จสิ้นเรียบร้อย";
+
+                Connew60.innerHTML = "ศูนย์เตือนภัยพิบัติแห่งชาติ (NDWC)";
+                Connew61.innerHTML = "เรื่องราวความสำเร็จในธุรกิจโทรคมนาคม: ศูนย์เตือนภัยพิบัติแห่งชาติ (NDWC)";
+                Connew62.innerHTML = "มูลค่าสัญญา: 162 ล้านบาท";
+                Connew63.innerHTML = "ระยะเวลาการติดตั้ง: 330 วัน (2009 – 2010)";
+                Connew64.innerHTML = "รายละเอียดโครงการ:";
+                Connew65.innerHTML = "ติดตั้งทุ่นตรวจจับสึนามิในทะเลอันดามัน";
+                Connew66.innerHTML = "การดำเนินการระบบตรวจจับสึนามิ";
+                Connew67.innerHTML = "การรวมระบบกับระบบเตือนภัยระดับชาติ";
+                Connew68.innerHTML = "การฝึกอบรมและสนับสนุนการปฏิบัติงาน";
+                Connew69.innerHTML = "สถานะปัจจุบัน: ระบบทำงานได้และได้รับการสนับสนุน";
+
+                Connew70.innerHTML = "ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร(BAAC) ";
+                Connew71.innerHTML = "ลูกค้า: ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร (BAAC)";
+                Connew72.innerHTML = "มูลค่าสัญญา: 647 ล้านบาท";
+                Connew73.innerHTML = "ระยะเวลาการติดตั้ง: 15 ปี (2006 – 2020)";
+                Connew74.innerHTML = "รายละเอียดโครงการ";
+                Connew75.innerHTML = " Platt Nera จัดทำโมเดลการแบ่งรายได้มูลค่า 3,000 ล้านบาท โดยลงทุนในการพัฒนาและติดตั้งระบบเอทีเอ็มครบวงจร ซึ่งรวมถึงการจัดส่งและติดตั้งเอทีเอ็ม 1,300 เครื่อง, ติดตั้งศูนย์ข้อมูลที่ทำงานตลอด 24 ชั่วโมงเพื่อสนับสนุนการดำเนินงานของ BAAC พร้อมกับซอฟต์แวร์สำหรับธุรกรรม ATM และระบบการสลับ (Base24), ทีมงานที่ทุ่มเทของเราให้การสนับสนุนอย่างต่อเนื่องแก่ BAAC ตลอดระยะเวลาสัญญา 15 ปี";
+
+                /* ห้ามเอาออก เอาไว้สำหรับเก็บค่า */
+                setCookie("language", "Thai", 30);
+
+            }
+        }
+
+    </script>
+
+    <header id="header" class="header sticky-top">
+
+        <div class="topbar d-flex align-items-center dark-background">
+            <div class="container d-flex justify-content-between">
+                <div class="contact-info d-flex align-items-center">
+                </div>
+                <div class="language-switcher d-flex align-items-center">
+                    <a href="#" onclick="toggleLanguage('English')" id="change_eng">
+                        <img src="assets/img/EN.webp" alt="EN" style="width:25px; height:15px;">
+                    </a>
+                    <a href="#" onclick="toggleLanguage('Thai')" id="change_th">
+                        <img src="assets/img/TH.webp" alt="TH" style="width:25px; height:15px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="branding">
+            <div class="container position-relative d-flex align-items-center justify-content-between">
+                <a href="index.html" class="logo d-flex align-items-center">
+                    <h1 class="sitename">PLATTNERA<br></h1>
+                </a>
+
+                <nav id="navmenu" class="navmenu">
+                    <ul>
+                        <li><a href="Home.html" id="Menuhome">HOME</a></li>
+                        <li class="dropdown">
+                            <a href="#"><span id="Menuabo">ABOUT US</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                            <ul>
+                                <li><a href="Company_Profile.html" id="Menucompany">COMPANY PROFILE</a></li>
+                                <li><a href="Executive.html" id="Menuexe">EXECUTIVE</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#"><span id="Menuour">OUR SOLUTION</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                            <ul>
+                                <li><a href="Banking_Industry_Solutions.html" id="Menubank">BANKING SOLUTIONS</a></li>
+                                <li><a href="Software_Development.html" id="Menusoft">SOFTWARE DEVELOPMENT</a></li>
+                                <li><a href="System_&_Network_Infrastructure.html" id="Menusys">SYSTEM & NETWORK INFRASTRUCTURE</a></li>
+                                <li><a href="Surveillance_Security.html" id="Menusur">SURVEILLANCE SECURITY</a></li>
+                                <li><a href="Telecommunication.html" id="Menutel">TELECOMMUNICATION</a></li>
+                                <li><a href="Disater.html" id="Menudis">Disaster Management</a></li>
+                                <li><a href="Internet_Of_Things.html" id="Menuiot">INTERNET OF (IoT)</a></li>
+                                <li><a href="Helpdesk_&_Monitering.html" id="Menuhel">HELPDESK & MONITERING</a></li>
+                            </ul>
+                        <li><a href="Success_Project.html" class="active" id="Menusuc">SUCCESS STORY</a></li>
+                        <li><a href="News.html" id="Menunews">NEWS</a></li>
+                        <li><a href="https://www.irasia.com/listco/hk/plattnera/index.htm" id="Menuinv" target="_blank">INVESTOR RELATION</a></li>
+                        <li><a href="Contact_Us.html" id="Menucon">CONTACT US</a></li>
+                        <li><a href="Career.html" id="Menucar">CAREER</a></li>
+                    </ul>
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main">
+
+        <section id="servicesx" class="servicesg section">
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="servicesg-item position-relative">
+                            <!-- 1 -->
+                            <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="200">
+                                <center>
+                                    <h2 style="color : darkorange" id="Connew00">
+                                        Platt Nera in ATM Maintenance: Installation of Passbook Automatic Machines
+                                    </h2>
+                                </center>
+                                <br />
+                            </div>
+                            <div class="row gy-4">
+
+                                <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+                                    <img src="assets/img/SS/SS-1.webp" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+                                    <p class="fst-italic" id="Connew01">
+                                        Customer: Bank of Agriculture and Agricultural Co-operative (BAAC)
+                                    </p><p id="Connew02">
+                                        Contract Value: 11 million baht (across 3 contracts)
+                                    </p><p id="Connew03">
+                                        Installation Period: 2021 – Present
+                                    </p><p id="Connew04">
+                                        Project Details:
+                                    </p><p id="Connew05">
+                                        •	Maintenance of 932 Automatic Teller Machines
+                                    </p><p id="Connew06">
+                                        •	Contract Value: 157 million baht
+                                    </p><p id="Connew07">
+                                        •	Installation Timeline: 210 days (2023-2024)
+                                    </p><p id="Connew08">
+                                        •	Installation of Passbook Automatic Machines at 1,242 sites
+                                    </p>
+                                </div>
+                            </div>
+                            <br />
+                            <br />
+                            <!-- 2 -->
+                            <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="200">
+                                <center>
+                                    <h2 style="color : darkorange" id="Connew10">
+                                        Platt Nera in ATM and Passbook Automatic Machine Leasing
+                                    </h2>
+                                </center>
+                                <br />
+                            </div>
+                            <div class="row gy-4">
+                                <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+                                    <p class="fst-italic" id="Connew11">
+                                        Customer: Government Savings Bank
+                                    </p><p id="Connew12">
+                                        Contract Value: 11 million baht (across 3 contracts)
+                                    </p><p id="Connew13">
+                                        Contract Value: 1,200 million baht
+                                    </p><p id="Connew14">
+                                        Installation Period: 2021 – 2026
+                                    </p><p id="Connew15">
+                                        Project Details:
+                                    </p><p id="Connew16">
+                                        •	Installation of 2,900 Automatic Teller Machines
+                                    </p><p id="Connew17">
+                                        •	Contract Value: 192 million baht
+                                    </p><p id="Connew18">
+                                        •	Installation of Passbook Automatic Machines at 790 sites
+
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+                                    <img src="assets/img/SS/SS-2.webp" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <br />
+                            <br />
+                            <!--  3  -->
+                            <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="200">
+                                <center>
+                                    <h2 style="color : darkorange" id="Connew20">
+                                        Platt Nera with the Provincial Electricity Authority (PEA)
+                                    </h2>
+                                </center>
+                                <br />
+                            </div>
+                            <div class="row gy-4">
+
+                                <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+                                    <img src="assets/img/SS/SS-3.webp" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+                                    <p class="fst-italic" id="Connew21">
+                                        Contract Value: 620 million baht (across 5 contracts)
+                                    </p><p id="Connew22">
+                                        Installation Period: 2017 – Present
+                                    </p><p id="Connew23">
+                                        Installation Period: 2021 – 2026
+                                    </p><p id="Connew24">
+                                        Project Details:
+                                    </p><p id="Connew25">
+                                        •	Installation of Unmanned Substation Systems at 467 sites
+                                    </p><p id="Connew26">
+                                        •	Integration of CCTV and NVR systems
+                                    </p><p id="Connew27">
+                                        •	Fire alarm, intrusion detection, and access control systems
+                                    </p><p id="Connew28">
+                                        •	Building automation systems
+                                    </p><p id="Connew29">
+                                        •	Ongoing training and operation support
+
+                                    </p>
+                                </div>
+                            </div>
+                            <br />
+                            <br />
+                            <!--  4  -->
+                            <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="200">
+                                <center>
+                                    <h2 style="color : darkorange" id="Connew30">
+                                        Platt Nera in Loan Processing System LPS
+                                    </h2>
+                                </center>
+                                <br />
+                            </div>
+                            <div class="row gy-4">
+                                <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+                                    <p class="fst-italic" id="Connew31">
+                                        Customer: Bank of Agriculture and Agricultural Co-operative (BAAC)
+                                    </p><p id="Connew31">
+                                        Contract Value: 647 million baht
+                                    </p><p id="Connew32">
+                                        Installation Period: 2023 – Present
+                                    </p><p id="Connew33">
+                                        Installation Period: 2021 – 2026
+                                    </p><p id="Connew34">
+                                        Project Details:
+                                    </p><p id="Connew35">
+                                        •	Development of Loan Processing System
+                                    </p><p id="Connew36">
+                                        •	Requirement gathering, development, and testing
+                                    </p><p id="Connew37">
+                                        •	 IT infrastructure installation and monitoring
+                                    </p><p id="Connew38">
+                                        •	System and network design
+                                    </p><p id="Connew39">
+                                        •	Installation of hardware, operating systems, ESX, security measures, Backup DR, and DC solutions
+
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+                                    <img src="assets/img/SS/SS-4.webp" class="img-fluid" alt="">
+
+                                </div>
+                            </div>
+                            <br />
+                            <br />
+                            <!--  5  -->
+                            <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="200">
+                                <center>
+                                    <h2 style="color : darkorange" id="Connew40">
+                                        Geo-Informatics and Space Technology Development Agency (GISTDA)
+                                    </h2>
+                                </center>
+                                <br />
+                            </div>
+                            <div class="row gy-4">
+                                <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+                                    <img src="assets/img/SS/SS-5.webp" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+                                    <p class="fst-italic" id="Connew41">
+                                        Success Story in Telecom Business: Geo-Informatics and Space Technology Development Agency (GISTDA)
+                                    </p><p id="Connew42">
+                                        Contract Value: 169 million baht
+                                    </p><p id="Connew43">
+                                        Installation Period: 500 days (2014 – 2017)
+                                    </p><p id="Connew44">
+                                        Project Details:
+                                    </p><p id="Connew45">
+                                        •	 Installation of 1 satellite station with a 13.56m antenna (X-band and S-band)
+                                    </p><p id="Connew46">
+                                        •	Integration with RadarSat-2, Cosmo-Skymed, and ThaiChote systems
+                                    </p><p id="Connew47">
+                                        •	System monitoring and control
+                                    </p><p id="Connew48">
+                                        •	Factory and on-site training
+
+                                    </p><p id="Connew49">
+                                        •	Current Status: Installation and operation
+                                    </p>
+                                </div>
+                            </div>
+                            <br />
+                            <br />
+                            <!--  6  -->
+                            <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="200">
+                                <center>
+                                    <h2 style="color : darkorange" id="Connew50">
+                                        Thai Meteorological Department (TMD)
+                                    </h2>
+                                </center>
+                                <br />
+                            </div>
+                            <div class="row gy-4">
+                                <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+                                    <p class="fst-italic" id="Connew51">
+                                        Success Story in Telecom Business: Thai Meteorological Department (TMD)
+                                    </p><p id="Connew52">
+                                        Contract Value: 187 million baht
+
+                                    </p><p id="Connew53">
+                                        Installation Period:  460 days (2011 – 2012)
+                                    </p><p id="Connew54">
+                                        Project Details:
+                                    </p><p id="Connew55">
+                                        •	Installation of 3 satellite stations
+                                    </p><p id="Connew56">
+                                        •	Polar Orbiting 2.4m LX-band Antenna
+                                    </p><p id="Connew57">
+                                        •	Geostationary 3.8m L-band Antenna for MTSAT
+                                    </p><p id="Connew58">
+                                        •	Geostationary 3.8m L-band Antenna for FY2
+                                    </p><p id="Connew59">
+                                        •	Integration with TMD systems
+                                    </p><p id="Connew510">
+                                        •	Training and operation support
+                                    </p><p id="Connew511">
+                                        •	Current Status: Project completed
+                                    </p>
+
+                                </div>
+                                <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+                                    <img src="assets/img/SS/SS-6.webp" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <br />
+                            <br />
+                            <!--  7  -->
+                            <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="200">
+                                <center>
+                                    <h2 style="color : darkorange" id="Connew60">
+                                        National Disaster Warning Center (NDWC)
+                                    </h2>
+                                </center>
+                                <br />
+
+                            </div>
+                            <div class="row gy-4">
+
+                                <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+                                    <img src="assets/img/SS/SS-7.webp" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+                                    <p class="fst-italic" id="Connew61">
+                                        Success Story in Telecom Business: National Disaster Warning Center (NDWC)
+                                    </p><p id="Connew62">
+                                        Contract Value: 162 million baht
+                                    </p><p id="Connew63">
+                                        Installation Period: 330 days (2009 – 2010)
+                                    </p><p id="Connew64">
+                                        Project Details:
+                                    </p><p id="Connew65">
+                                        •	Installation of Tsunami Buoys in the Andaman Sea
+                                    </p><p id="Connew66">
+                                        •	Implementation of Tsunami Detection Systems
+                                    </p><p id="Connew67">
+                                        •	Integration with National Warning Systems
+                                    </p><p id="Connew68">
+                                        •	Training and operation support
+                                    </p><p id="Connew69">
+                                        •	Current Status: Operational and supported
+                                    </p>
+                                </div>
+                            </div>
+                            <br />
+                            <br />
+                            <!--  8  -->
+                            <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="200">
+                                <center>
+                                    <h2 style="color : darkorange" id="Connew70">
+                                        Bank of Agriculture and Agricultural Co-operative (BAAC)
+                                    </h2>
+                                </center>
+                                <br />
+                            </div>
+
+                            <div class="row gy-4">
+                                <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+                                    <p class="fst-italic" id="Connew71">
+                                        Customer: Bank of Agriculture and Agricultural Co-operative (BAAC)
+                                    </p><p id="Connew72">
+                                        Contract Value: 647 million baht
+                                    </p><p id="Connew73">
+                                        Installation Period: 15 Years (2006 – 2020)
+                                    </p><p id="Connew74">
+                                        Project Details:
+                                    </p><p id="Connew75">
+                                        Platt Nera established a revenue-sharing model valued at 3,000 million baht. We invested in the development and deployment of a comprehensive ATM system, which included the delivery and installation of 1,300 ATMs. Additionally, we set up a 24/7 data center to support BAAC’s operations, along with software for ATM transactions and switching (Base24). Our dedicated team provided continuous support to BAAC throughout the entire 15-years contract period.
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+                                    <img src="assets/img/SS/SS-8.webp" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer" class="footer position-relative dark-background">
+        <div class="footer">
+            <div class="container footer-top">
+                <div class="row gy-4">
+                    <div class="col-lg-2 col-md-2 footer-about">
+                        <center>
+                            <img src="assets/img/Logo-PN.webp" height="100">
+                        </center>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 footer-about">
+                        <div class="footer-contact pt-6">
+                            <p id="foot1">170/9-10 4th Floor Ocean Tower 1</p>
+                            <p id="foot2">Sukhumvit Soi 16, Ratchadapisek Rd., Klongtoey, Bangkok 10110</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 footer-about">
+                        <div class="footer-contact pt-6">
+                            <p><strong id="foot3">Phone:</strong> <span id="foot4">+66-2661-9922 to 8</span></p>
+                            <p id="foot5">Fax: <span>+66-2661-9933</span></p>
+                            <p><strong id="foot6">Email</strong></p>
+                            <p><strong id="foot7">Sales / Operations :</strong> <span>enquiries@plattnera.com</span></p>
+                            <p><strong id="foot8">Investor Relations:</strong> <span>ir@plattnera.com</span></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-2 footer-about">
+                        <img src="assets/img/1213.webp" height="130" class="img_radius">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="container copyright text-center mt-4">
+                <p>© <span>2024 Platt Nera International Limited</span></p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

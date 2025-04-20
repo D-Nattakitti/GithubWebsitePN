@@ -1,0 +1,69 @@
+body10 {
+    font-family: 'Prompt', 'Noto Sans Thai', sans-serif;
+    background-color: #f3f4f6; /* สีพื้นหลังของทั้งหน้า */
+}
+
+.company-card10 {
+    background: white; /* สีพื้นหลังของการ์ด */
+    border-radius: 12px; /* มุมโค้ง */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* เงา */
+    padding: 20px; /* ระยะห่างภายใน */
+    text-align: left; /* จัดข้อความให้อยู่ทางซ้าย */
+    max-width: 1000px; /* ขนาดสูงสุดของการ์ด */
+    margin: 20px auto; /* จัดให้อยู่กลาง */
+    overflow: hidden; /* ซ่อนส่วนเกินของรูป */
+}
+
+.company-banner10 {
+    position: relative;
+    width: 100%;
+    height: 200px; /* ความสูงของแถบรูป */
+    overflow: hidden; /* ซ่อนส่วนเกินของรูป */
+}
+
+    .company-banner10 img {
+        width: 100%; /* ความกว้าง 100% */
+        height: auto; /* ความสูงอัตโนมัติ */
+        object-fit: cover; /* ทำให้ภาพครอบคลุมพื้นที่ทั้งหมดโดยไม่เสียสัดส่วน */
+    }
+
+.company-logo10 {
+    width: 150px; /* ขนาดโลโก้ */
+    height: auto; /* ความสูงอัตโนมัติ */
+    border-radius: 8px; /* มุมโค้งของโลโก้ */
+    margin-right: 10px; /* ระยะห่างด้านขวาของโลโก้ */
+}
+
+.company-info10 {
+    display: flex; /* แสดงตำแหน่งเป็นแถว */
+    flex-direction: column; /* องค์ประกอบในแนวตั้ง */
+}
+
+.company-name10 {
+    font-size: 32px; /* ขนาดชื่อบริษัท */
+    font-weight: bold; /* ตัวหนา */
+}
+
+.company-sector10 {
+    font-size: 18px; /* ขนาดของประเภทบริษัท */
+    color: #555; /* สีข้อความ */
+}
+
+.company-location10 {
+    display: flex; /* แสดงตำแหน่งเป็นแถว */
+    align-items: center; /* จัดข้อความให้อยู่กลางแนวตั้ง */
+    font-size: 16px; /* ขนาดข้อความตำแหน่ง */
+    color: darkorange; /* สีข้อความตำแหน่ง */
+}
+
+.location-icon10 {
+    margin-right: 5px; /* ระยะห่างระหว่างไอคอนและข้อความ */
+    font-size: 20px; /* ขนาดของไอคอน */
+}
+
+/* ปรับการจัดเรียงของโลโก้และข้อมูลให้แสดงในแนวนอน */
+.company-header10 {
+    display: flex; /* ใช้ flexbox */
+    align-items: center; /* จัดกลางแนวตั้ง */
+    gap: 10px; /* ระยะห่างระหว่างโลโก้และข้อมูล */
+}

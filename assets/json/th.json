@@ -1,0 +1,22 @@
+{
+    "menu": {
+        "home": "หน้าหลัก",
+        "about": "เกี่ยวกับเรา",
+        "companyProfile": "ประวัติบริษัท",
+        "executive": "คณะผู้บริหาร",
+        "ourSolution": "โซลูชั่นของเรา",
+        "bankingSolutions": "โซลูชั่นทางการเงิน",
+        "softwareDevelopment": "โซลูชั่นทางการพัฒนาระบบ",
+        "systemNetworkInfrastructure": "โซลูชั่นทางระบบเครือข่าย",
+        "surveillanceSecurity": "โซลูชั่นทางด้านความปลอดภัย",
+        "telecommunication": "โซลูชั่นทางโทรคมนาคม",
+        "disasterWarning": "โซลูชั่นทางระบบเตือนภัยทางภัยพิบัติ",
+        "internetOfThings": "โซลูชั่นทาง IOT",
+        "helpdeskMonitoring": "โซลูชั่นด้านการช่วยเหลือ",
+        "successStory": "ผลงานของเรา",
+        "news": "ข่าวสารองค์กร",
+        "investorRelation": "นักลงทุนสัมพันธ์",
+        "contactUs": "ติดต่อเรา",
+        "career": "สมัครงาน"
+    },
+}

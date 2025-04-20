@@ -1,0 +1,22 @@
+{
+    "menu": {
+        "home": "HOME",
+        "about": "ABOUT US",
+        "companyProfile": "COMPANY PROFILE",
+        "executive": "EXECUTIVE",
+        "ourSolution": "OUR SOLUTION",
+        "bankingSolutions": "BANKING SOLUTIONS",
+        "softwareDevelopment": "SOFTWARE DEVELOPMENT",
+        "systemNetworkInfrastructure": "SYSTEM & NETWORK INFRASTRUCTURE",
+        "surveillanceSecurity": "SURVEILLANCE SECURITY",
+        "telecommunication": "TELECOMMUNICATION",
+        "disasterWarning": "DISASTER WARNING",
+        "internetOfThings": "INTERNET OF THINGS",
+        "helpdeskMonitoring": "HELPDESK & MONITORING",
+        "successStory": "SUCCESS STORY",
+        "news": "NEWS",
+        "investorRelation": "INVESTOR RELATION",
+        "contactUs": "CONTACT US",
+        "career": "CAREER"
+    },
+}
